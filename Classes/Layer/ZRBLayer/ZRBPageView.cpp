@@ -1,4 +1,4 @@
-﻿
+
 #include "ZRBPageView.h"
 
 ZRBPageView::ZRBPageView( ) : PagePrice({ 0 , 4000 , 4000 , 4000 , 16000 })
@@ -124,7 +124,7 @@ void ZRBPageView::setPageView( )
 	if ( !page2 )
 	{
 		// 创建弹窗层
-		auto layer = LayerColor::create( Color4B( 0 , 0 , 0 , 120 ) );
+		auto layer = LayerColor::create( Color4B( 255 , 255 , 255 , 120 ) );
 		popup( layer , 2 );
 		layer->setTag( 11 );
 		layout2->addChild( layer );

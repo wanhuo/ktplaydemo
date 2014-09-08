@@ -1,4 +1,4 @@
-﻿
+
 #include "ZRBMenuChars.h"
 
 
@@ -68,6 +68,7 @@ bool ZRBMenuChars::init( )
 	//KTLeaderboardC::gameLeaderboard( "1234" , 0 , 10 , KTLeaderboardCallBack( leaderboardCallback ) );
 	setCharts( );
 
+	setRanking( __Bool::create(true) );
 	return true;
 }
 
