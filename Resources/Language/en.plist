@@ -101,7 +101,7 @@
   <key>Music_Die</key>
   <string>Die.mp3</string>
   <key>Music_Gold</key>
-  <string>Goldcoin.mp3</string>
+  <string>Goldcoin.wav</string>
   <key>Music_Jump</key>
   <string>Jump.mp3</string>
 </dict>
