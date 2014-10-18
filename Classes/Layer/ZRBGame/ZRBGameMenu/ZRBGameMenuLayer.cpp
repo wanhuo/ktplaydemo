@@ -1,4 +1,4 @@
-﻿
+
 #include "ZRBGameMenuLayer.h"
 #include "Scene/ZRBScene.h"
 
@@ -124,6 +124,7 @@ void ZRBGameMenuLayer::backGameItemClick( Ref *ref )
 	auto loading = ZRBLoadingLayer::create( );
 	loading->setPosition( ZRB_VISIBLE_SIZE / 2 );
 	loading->setLoading( 50 , 1 , 0.75 );
+	loading->setName( "loading" );
 	this->addChild( loading );
 
 	schedule( schedule_selector( ZRBGameMenuLayer::scheduleCall ) , 1 , 2 , 0 );

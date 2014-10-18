@@ -1,7 +1,7 @@
 
 #include "ZRBPageView.h"
 
-ZRBPageView::ZRBPageView( ) : PagePrice({ 0 , 4000 , 4000 , 4000 , 16000 })
+ZRBPageView::ZRBPageView( ) : PagePrice({ 0 , 30000 , 30000 , 4000 , 16000 })
 {
 
 }
@@ -42,9 +42,11 @@ bool ZRBPageView::init( )
 	// 添加菜单
 	pMenu = ZRBMenu::create( );
 	pMenu->setButtonColor0( );
+	pMenu->setName("menu");
 	this->addChild( pMenu , 10 );
 	// 添加游戏层
 	gameLayer = ZRBGameLayer::create( );
+	gameLayer->setName("game");
 	this->addChild( gameLayer , 3 );
 	// 添加透明遮挡层
 	opacityLayer = LayerColor::create( Color4B( 0 , 0 , 0 , 0 ) , ZRB_VISIBLE_SIZE.width , ZRB_VISIBLE_SIZE.height );
@@ -54,7 +56,7 @@ bool ZRBPageView::init( )
 
 	// Add pageview
 	// TODO: 层级 背景
-	addChild( pageView , 5 );
+	addChild( pageView , 5 , 11);
 	// Add schedule
 	schedule( schedule_selector( ZRBPageView::schedulecallback ) );
 	NotificationCenter::getInstance( )->addObserver( this , callfuncO_selector( ZRBPageView::gameBegain ) , "Game" , nullptr );
@@ -83,23 +85,15 @@ void ZRBPageView::setPageView( )
 
 	// 创建分页 1
 	auto gBG0 = Layer::create( );
-	// 获取背景信息
-	auto pMaterial0 = ZRBTheme::getMaterialBlueSky( );
-	// 添加到内存池
-	SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( pMaterial0->plist , pMaterial0->png );
-	// 创建背景
 
 
 	// 创建分页二
 	auto gBG1 = Layer::create( );
-	auto pMaterial1 = ZRBTheme::getMaterialSummer( );
-	SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( pMaterial1->plist , pMaterial1->png );
+	
 
 	// 创建分页三
 	auto gBG2 = Layer::create( );
-	auto pMaterial2 = ZRBTheme::getMaterialSweet( );
-	SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( pMaterial2->plist , pMaterial2->png );
-
+	
 
 	// Set view with meun background
 	auto layout0 = ui::Layout::create( );
@@ -515,6 +509,7 @@ void ZRBPageView::callBuy( LayerColor * layer , int idx )
 			market->call_buy( );
 		} );
 		mes->setGlobalZOrder( 200 );
+		mes->setName("page_message");
 		pageView->addChild( mes );
 
 		return;

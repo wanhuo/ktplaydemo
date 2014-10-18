@@ -48,7 +48,14 @@ void ZRBMessageLayer::setMessageLabel( std::string mes )
 	callBack->setPosition( width / 2 , label->getContentSize( ).height * 4 / 7 );
 	menu->addChild( callBack );
 
-	messageLabel = Label::createWithTTF( mes , "customfout.otf" , 40 );
+	if ( Application::getInstance( )->getCurrentLanguage( ) == LanguageType::ENGLISH )
+	{
+		messageLabel = Label::createWithTTF( mes , "customfout.otf" , 35 );
+	}
+	else
+	{
+		messageLabel = Label::createWithTTF( mes , "customfout.otf" , 40 );
+	}
 	messageLabel->setColor( Color3B( 69 , 193 , 255 ) );
 	messageLabel->setAnchorPoint( Vec2( 0.5 , 0.2 ) );
 	messageLabel->setAlignment( TextHAlignment::CENTER );
@@ -59,13 +66,13 @@ void ZRBMessageLayer::setMessageLabel( std::string mes )
 
 void ZRBMessageLayer::setMessageLabel( std::string mes , std::string item , const std::function<void( )> &func )
 {
-	auto label = Label::createWithTTF( ZRBLanguage::getValue( "Back" ) , "customfout.otf" , 50 );
+	auto label = Label::createWithTTF( ZRBLanguage::getValue( "Back" ) , "customfout.otf" , 40 );
 	label->setColor( Color3B( 69 , 193 , 255 ) );
 	auto callBack = MenuItemLabel::create( label , CC_CALLBACK_0( ZRBMessageLayer::callback , this ) );
 	callBack->setPosition( width * 3 / 4 , label->getContentSize( ).height * 4 / 7 );
 	menu->addChild( callBack );
 
-	auto itemlabel = Label::createWithTTF( item , "customfout.otf" , 50 );
+	auto itemlabel = Label::createWithTTF( item , "customfout.otf" , 40 );
 	itemlabel->setColor( Color3B( 69 , 193 , 255 ) );
 	auto custom = MenuItemLabel::create( itemlabel , [ = ] ( Ref* )
 	{
@@ -76,7 +83,14 @@ void ZRBMessageLayer::setMessageLabel( std::string mes , std::string item , cons
 	custom->setPosition( width / 4 , label->getContentSize( ).height * 4 / 7 );
 	menu->addChild( custom );
 
-	messageLabel = Label::createWithTTF( mes , "customfout.otf" , 40 );
+	if ( Application::getInstance()->getCurrentLanguage() == LanguageType::ENGLISH )
+	{
+		messageLabel = Label::createWithTTF( mes , "customfout.otf" , 35 );
+	}
+	else
+	{
+		messageLabel = Label::createWithTTF( mes , "customfout.otf" , 40 );
+	}	
 	messageLabel->setColor( Color3B( 69 , 193 , 255 ) );
 	messageLabel->setAnchorPoint( Vec2( 0.5 , 0.2 ) );
 	messageLabel->setAlignment( TextHAlignment::CENTER );

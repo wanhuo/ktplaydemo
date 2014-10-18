@@ -1,4 +1,4 @@
-﻿
+
 #ifndef __ZRBLoadingLayer_H__
 #define __ZRBLoadingLayer_H__
 

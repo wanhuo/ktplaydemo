@@ -1,4 +1,4 @@
-﻿
+
 
 #ifndef __ZRBMarketRole_H__
 #define __ZRBMarketRole_H__
@@ -22,7 +22,7 @@ public:
 private:
 
 	// 角色是否购买
-	std::vector<bool>pBuy;
+	bool pBuy[6];
 	// 角色价格
 	std::vector<int>pPrice;
 	// 角色介绍
@@ -54,7 +54,7 @@ private:
 	Vector<LayerColor *>curPage;
 
 	// pageView 大小
-	Size size;
+    cocos2d::Size size;
 
 public:
 

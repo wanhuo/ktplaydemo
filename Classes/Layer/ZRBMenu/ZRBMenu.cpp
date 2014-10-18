@@ -264,6 +264,7 @@ void ZRBMenu::begainGame( Ref * ref )
 void ZRBMenu::addGold( )
 {
 	auto market = ZRBMenuMarket::create( );
+	market->setName( "menu_market" );
 	this->addChild( market , 101 );
 	market->call_buy( );
 
@@ -324,7 +325,9 @@ void ZRBMenu::setting( )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
 	}
-	this->addChild( ZRBMenuSet::create( ) , 101 );
+	auto set = ZRBMenuSet::create( );
+	set->setName("menu_set");
+	this->addChild( set , 101 );
 }
 
 
@@ -337,17 +340,21 @@ void ZRBMenu::Ktplay( )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
 	}
-	/* Undone : ktplay 社区
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+	// Undone : ktplay 社区
 	if ( KTPlayC::isEnabled( ) )
 	{
 		KTPlayC::show( );
 	}
-	else*/
+	else
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 	{
 		auto mes = ZRBMessageLayer::create( );
 		// UnresolvedMergeConflict 中文显示
 		mes->setMessageLabel( "社区不可用" );
 		mes->setGlobalZOrder( 200 );
+		mes->setName("menu_mes");
 		this->addChild( mes );
 	}
 }
@@ -361,7 +368,9 @@ void ZRBMenu::market( )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
 	}
-	this->addChild( ZRBMenuMarket::create( ) , 101 );
+	auto market = ZRBMenuMarket::create( );
+	market->setName("menu_market");
+	this->addChild( market , 101 );
 }
 
 /**
@@ -373,7 +382,20 @@ void ZRBMenu::charts( )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
 	}
-	this->addChild( ZRBMenuChars::create( ) , 101 );
+
+    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+   
+    IOSRanking::getInstance()->showLeaderboard();
+
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID )
+ 
+    auto ranking = ZRBMenuChars::create( );
+    ranking->setName("menu_ranking");
+    this->addChild( ranking , 101 );
+    
+#endif
+
 }
 
 /**

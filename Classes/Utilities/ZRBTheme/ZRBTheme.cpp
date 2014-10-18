@@ -44,20 +44,35 @@ sMaterial* ZRBTheme::getMaterialBlueSky( )
 	return new sMaterial { "blueSky_material.plist" , "blueSky_material.png" , "_blueSky" , 1 , true , _colors };
 }
 
-
-sHero* ZRBTheme::getHeroDragon( )
+sHero * ZRBTheme::getHeroGrotle( )
 {
-	return new sHero { "dragon_hero.plist" , "dragon_hero.png" , "_dragon" , 2 , 1 };
-};
-
-sHero * ZRBTheme::getHeroPink( )
-{
-	return new sHero { "pink_heor.plist" , "pink_heor.png" , "_pink" , 2 , 0 };
+	return new sHero { "grotle_hero.plist" , "grotle_hero.png" , "_grotle" , 4 , 5 , 1 };
 }
 
-sHero * ZRBTheme::getHeroSnail( )
+
+sHero * ZRBTheme::getHeroHoot( )
 {
-	return new sHero { "snail_heor.plist" , "snail_heor.png" , "_snail" , 2 , 0 };
+	return new sHero { "hoot_hero.plist" , "hoot_hero.png" , "_hoot" , 8 , 0 , 3 };
+}
+
+sHero * ZRBTheme::getHeroMagcargo( )
+{
+	return  new sHero { "magcargo_hero.plist" , "magcargo_hero.png" , "_magcargo" , 5 , 0 , 4 };
+}
+
+sHero * ZRBTheme::getHeroSpoink( )
+{
+	return  new sHero { "spoink_hero.plist" , "spoink_hero.png" , "_spoink" , 4 , 0 , 5 };
+}
+
+sHero * ZRBTheme::getHeroTropius( )
+{
+	return  new sHero { "tropius_hero.plist" , "tropius_hero.png" , "_tropius" , 6 , 0 , 2 };
+}
+
+sHero * ZRBTheme::getHeroSpinarak( )
+{
+	return  new sHero { "spinarak_hero.plist" , "spinarak_hero.png" , "_spinarak" , 4 , 0 , 2 };
 }
 
 void ZRBTheme::setCurrentMaterial( sMaterial *_material )

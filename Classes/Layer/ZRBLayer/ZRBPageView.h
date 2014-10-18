@@ -33,7 +33,7 @@ private:
 	ZRBMenu * pMenu;
 
 	//弹窗大小
-	Size size;
+	cocos2d::Size size;
 	// 背板
 	Scale9Sprite * backGrond;
 	// 游戏层

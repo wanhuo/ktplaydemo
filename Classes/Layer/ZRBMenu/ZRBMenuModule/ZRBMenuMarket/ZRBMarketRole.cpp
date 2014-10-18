@@ -1,10 +1,10 @@
-﻿
+
 
 #include "ZRBMarketRole.h"
 
 ZRBMarketRole::ZRBMarketRole( ) 
-	: pBuy( { true , false , false } )
-	, pPrice( { 0 , 2000 , 2000 } )
+	: pPrice( { 0 , 2999 , 2999 , 6999, 79999 , 19999 } )
+	, pageView(nullptr)
 {
 }
 
@@ -19,17 +19,19 @@ bool ZRBMarketRole::init( )
 		return false;
 	}
 
-	hero.push_back( ZRBTheme::getHeroDragon( ) );
-	hero.push_back( ZRBTheme::getHeroSnail( ) );
-	hero.push_back( ZRBTheme::getHeroPink( ) );
+	hero.push_back( ZRBTheme::getHeroTropius( ) );
+	hero.push_back( ZRBTheme::getHeroSpinarak( ) );
+	hero.push_back( ZRBTheme::getHeroHoot( ) );
+	hero.push_back( ZRBTheme::getHeroSpoink( ) );
+	hero.push_back( ZRBTheme::getHeroMagcargo( ) );
+	hero.push_back( ZRBTheme::getHeroGrotle( ) );
 
-	strName.push_back( ZRBLanguage::getValue( "Market_role_name_1" ) );
-	strName.push_back( ZRBLanguage::getValue( "Market_role_name_2" ) );
-	strName.push_back( ZRBLanguage::getValue( "Market_role_name_3" ) );
+	for ( int i = 0; i < 6; i++ )
+	{
+		strName.push_back( ZRBLanguage::getValue( String::createWithFormat( "Market_role_name_%d" , i + 1 )->getCString( ) ) );
+		strChar.push_back( ZRBLanguage::getValue( String::createWithFormat( "Market_role_chr_%d" , i + 1 )->getCString( ) ) );
+	}
 
-	strChar.push_back( ZRBLanguage::getValue( "Market_role_chr_1" ) );
-	strChar.push_back( ZRBLanguage::getValue( "Market_role_chr_2" ) );
-	strChar.push_back( ZRBLanguage::getValue( "Market_role_chr_1" ) );
 
 	//    strIntr.push_back("小礼一份");
 	//    strIntr.push_back("无意邂逅");
@@ -38,11 +40,15 @@ bool ZRBMarketRole::init( )
 	_color.push_back( Color3B( 246 , 173 , 100 ) );
 	_color.push_back( Color3B( 91 , 141 , 53 ) );
 	_color.push_back( Color3B( 189 , 67 , 147 ) );
+	_color.push_back( Color3B( 189 , 67 , 147 ) );
+	_color.push_back( Color3B( 189 , 67 , 147 ) );
+	_color.push_back( Color3B( 189 , 67 , 147 ) );
 
-	for ( auto p : hero )
-	{
-		SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( p->plist , p->png );
-	}
+//	// todo : delate
+//	for ( auto p : hero )
+//	{
+//		SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( p->plist , p->png );
+//	}
 
 	// 设置大小
 	if ( ZRB_VISIBLE_SIZE.height > 1100 )
@@ -57,12 +63,16 @@ bool ZRBMarketRole::init( )
 	{
 		size = Size( 410 , 400 );
 	}
-	int x = 3;
+	int x = 6;
 	//    bool b = false;
 	//    ZRBUserDate::getInstance()->saveData(KEY_ROLE_ONE, &b);
 	//    ZRBUserDate::getInstance()->saveData(KEY_ROLE_TWO, &b);
+	pBuy [ 0 ] = true;
 	pBuy [ 1 ] = ZRBUserDate::getInstance( )->getDateBool( KEY_ROLE_ONE );
 	pBuy [ 2 ] = ZRBUserDate::getInstance( )->getDateBool( KEY_ROLE_TWO );
+	pBuy [ 3 ] = ZRBUserDate::getInstance( )->getDateBool( KEY_ROLE_THREE );
+	pBuy [ 4 ] = ZRBUserDate::getInstance( )->getDateBool( KEY_ROLE_FOUR );
+	pBuy [ 5 ] = ZRBUserDate::getInstance( )->getDateBool( KEY_ROLE_FIVE );
 
 	// 创建 pageView
 	pageView = ui::PageView::create( );
@@ -85,21 +95,23 @@ bool ZRBMarketRole::init( )
 		curPage.pushBack( layer );
 	}
 
-	for ( int i = 0; i < 3; i++ )
+	for ( int i = 0; i < x; i++ )
 	{
 		auto animation = Animation::create( );
 
 		for ( int j = 0; j < hero.at( i )->climbAnimationImageNum; j++ )
 		{
-			animation->addSpriteFrame( SpriteFrameCache::getInstance( )->getSpriteFrameByName( String::createWithFormat( "hero_climb_%d%s%s" , j + 1 , hero.at( i )->NameAfter.c_str( ) , ".png" )->getCString( ) ) );
+			animation->addSpriteFrame( SpriteFrameCache::getInstance( )->getSpriteFrameByName( String::createWithFormat( "hero_climb_%d%s%s" , j , hero.at( i )->NameAfter.c_str( ) , ".png" )->getCString( ) ) );
 		}
-		animation->setDelayPerUnit( 0.3 );
+		animation->setDelayPerUnit( 0.1 );
 		heroAnimation.pushBack( animation );
 	}
 
 	roleLayer( );
 
+
 	this->addChild( pageView );
+
 
 	return true;
 
@@ -112,7 +124,7 @@ void ZRBMarketRole::roleLayer( )
 	TTFConfig ttfChar( "customfout.otf" , 35 );
 	//    TTFConfig ttfIntr("customfout.otf", 30);
 
-	for ( int i = 0; i < 3; i++ )
+	for ( int i = 0; i < 6; i++ )
 	{
 		float scale = size.height / 535;
 		// 创建角色名字 label
@@ -212,10 +224,10 @@ void ZRBMarketRole::roleLayer( )
 
 void ZRBMarketRole::callUse( )
 {
-	if ( ZRBUserDate::getInstance( )->getDateBool( KEY_CHECK_SOUND ) )
+	/*if ( ZRBUserDate::getInstance( )->getDateBool( KEY_CHECK_SOUND ) )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
-	}
+	}*/
 	auto idx = pageView->getCurPageIndex( );
 	auto gold = ZRBUserDate::getInstance( )->getDateInt( KEY_DATA_GOLDNUM );
 	if ( pBuy [ idx ] )
@@ -252,6 +264,24 @@ void ZRBMarketRole::callUse( )
 				ZRBUserDate::getInstance( )->saveData( KEY_ROLE_TWO , &t );
 				break;
 
+			case 3:
+				pBuy [ 3 ] = true;
+				setButtenUse( idx );
+				ZRBUserDate::getInstance( )->saveData( KEY_ROLE_THREE , &t );
+				break;
+
+			case 4:
+				pBuy [ 4 ] = true;
+				setButtenUse( idx );
+				ZRBUserDate::getInstance( )->saveData( KEY_ROLE_FOUR , &t );
+				break;
+
+			case 5:
+				pBuy [ 5 ] = true;
+				setButtenUse( idx );
+				ZRBUserDate::getInstance( )->saveData( KEY_ROLE_FIVE , &t );
+				break;
+
 			default:
 				break;
 		}
@@ -260,6 +290,7 @@ void ZRBMarketRole::callUse( )
 		mes->setMessageLabel( ZRBLanguage::getValue( "Message_market_success" ) );
 		mes->setPosition( -this->convertToWorldSpace( Vec2::ZERO ) );
 		mes->setGlobalZOrder( 200 );
+		mes->setName( "mk_r_mes" );
 		this->addChild( mes );
 
 		// 发送信息
@@ -271,6 +302,7 @@ void ZRBMarketRole::callUse( )
 		mes->setMessageLabel( ZRBLanguage::getString( "Message_market_fail_1" ) + "\n" + ZRBLanguage::getString( "Message_market_fail_2" ) );
 		mes->setPosition( -this->convertToWorldSpace( Vec2::ZERO ) );
 		mes->setGlobalZOrder( 200 );
+		mes->setName( "mk_r_mes" );
 		this->addChild( mes );
 		return;
 	}

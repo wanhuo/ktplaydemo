@@ -2,27 +2,35 @@
 #include "ZRBMenuChars.h"
 
 
+
 static int myranking;
 static std::vector<std::string> KTNickname;
 static std::vector<std::string> KTScore;
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 // Todo: ktplay
-//void ZRBMenuChars::leaderboardCallback( bool isSuccess , const char *leaderboardId , KTLeaderboardPaginatorC *leaderboard , KTErrorC *error )
-//{
-//	if ( isSuccess )
-//	{
-//		KTNickname.clear( );
-//		KTScore.clear( );
-//		myranking = leaderboard->myRank;
-//		for ( int i = 0; i < leaderboard->itemCount; i++ )
-//		{
-//			KTNickname.push_back( leaderboard->itemsArray [ i ].nickname );
-//			KTScore.push_back( leaderboard->itemsArray [ i ].score );
-//		}
-//	}
-//
-//	NotificationCenter::getInstance( )->postNotification( "Notification_Ranking" , __Bool::create( isSuccess ) );
-//}
+void ZRBMenuChars::leaderboardCallback( bool isSuccess , const char *leaderboardId , KTLeaderboardPaginatorC *leaderboard , KTErrorC *error )
+{
+	if ( isSuccess )
+	{
+		KTNickname.clear( );
+		KTScore.clear( );
+		myranking = leaderboard->myRank;
+		for ( int i = 0; i < leaderboard->itemCount; i++ )
+		{
+			KTNickname.push_back( leaderboard->itemsArray [ i ].nickname );
+			KTScore.push_back( leaderboard->itemsArray [ i ].score );
+		}
+	}
+	else
+	{
+		log( "=====leadboard lose===========" );
+	}
+
+	NotificationCenter::getInstance( )->postNotification( "Notification_Ranking" , __Bool::create( isSuccess ) );
+}
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 
 
 bool ZRBMenuChars::init( )
@@ -64,8 +72,11 @@ bool ZRBMenuChars::init( )
 
 	NotificationCenter::getInstance( )->addObserver( this , callfuncO_selector( ZRBMenuChars::setRanking ) , "Notification_Ranking" , nullptr );
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	// Todo: ktplay
-	//KTLeaderboardC::gameLeaderboard( "1234" , 0 , 10 , KTLeaderboardCallBack( leaderboardCallback ) );
+	KTLeaderboardC::gameLeaderboard( "1234" , 0 , 10 , KTLeaderboardCallBack( leaderboardCallback ) );
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 	setCharts( );
 
 	setRanking( __Bool::create(true) );
@@ -125,11 +136,14 @@ void ZRBMenuChars::setCharts( )
 	_leaderboard->setAlignment( TextHAlignment::CENTER );
 	_backboard->addChild( _leaderboard );
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	// Todo: ktplay
-	//if ( !KTPlayC::isEnabled( ) )
+	if ( !KTPlayC::isEnabled( ) )
 	{
 		_leaderboard->setString( ZRBLanguage::getValue( "Ranking_unable" ) );
 	}
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 
 	//    // 设置 back 按钮
 	//    auto back = MenuItemImage::create();
@@ -152,13 +166,16 @@ void ZRBMenuChars::setRanking( Ref * ref )
 	else
 	{
 		_leaderboard->setString( "" );
-		/*Todo : 排行榜
+		// Todo : 排行榜
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 		if ( KTAccountManagerC::isLoggedIn( ) )
 		{
 			_curRank->setString( String::createWithFormat( "NO.%d" , myranking )->getCString( ) );
 			_curScore->setString( KTScore.at( myranking - 1 ) );
 		}
-		else*/
+		else
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 		{
 			_curRank->setString( ZRBLanguage::getValue( "Ranking_curRank" ) );
 		}

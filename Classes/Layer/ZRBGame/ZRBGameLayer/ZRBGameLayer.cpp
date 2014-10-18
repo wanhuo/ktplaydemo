@@ -1,25 +1,33 @@
 ﻿
 #include "ZRBGameLayer.h"
 
+
+
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 // Todo : ktplay
-//void ZRBGameLayer::reportScoreCallBack( bool isSuccess , const char *leaderboardId , long long score , KTErrorC *error )
-//{
-//	if ( isSuccess )
-//	{
-//		CCLOG( "++-%s---%lld-++" , leaderboardId , score );
-//	}
-//	else
-//	{
-//		CCLOG( "+--%d---%s-++" , error->code , error->description );
-//	}
-//}
+void ZRBGameLayer::reportScoreCallBack( bool isSuccess , const char *leaderboardId , long long score , KTErrorC *error )
+{
+	if ( isSuccess )
+	{
+		CCLOG( "++-%s---%lld-++" , leaderboardId , score );
+	}
+	else
+	{
+		CCLOG( "+--%d---%s-++" , error->code , error->description );
+	}
+}
+#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
 
 ZRBGameLayer::ZRBGameLayer( )
+	: ZRBBaseGameLayer()
+	, _begainGame( false )
+	, pBegainHeight(0)
+	, curHeight(0)
+	, count(0)
+	, _idx()
 {
-	pCurrentTimbo = nullptr;
-	_begainGame = false;
-	count = 0;
-	curHeight = 0;
 }
 
 ZRBGameLayer::~ZRBGameLayer( )
@@ -33,7 +41,7 @@ bool ZRBGameLayer::init( )
 	{
 		return false;
 	}
-
+	
 	ZRBBaseGameLayer::initObject( );
 
 	pGoldNumLabel->setVisible( false );
@@ -48,7 +56,7 @@ bool ZRBGameLayer::init( )
 													 "NOTIFICATION_Resume" , nullptr );
 	NotificationCenter::getInstance( )->addObserver( this , callfuncO_selector( ZRBGameLayer::changeHero ) ,
 													 "NOTIFICATION_Hero" , nullptr );
-	NotificationCenter::getInstance( )->addObserver( this , callfuncO_selector( ZRBGameLayer::pauseItemClick ) , "Background" , nullptr );
+	NotificationCenter::getInstance( )->addObserver( this , callfuncO_selector( ZRBGameLayer::pauseItemClick ) , "EnterBackground" , nullptr );
 
 	this->scheduleUpdate( );
 	schedule( schedule_selector( ZRBGameLayer::addTimboCall ) , 0.5 );
@@ -152,6 +160,12 @@ void ZRBGameLayer::update( float delta )
 			pIsLost = true;
 			// 掉落
 			pHero->jumpTo( Point( pHero->getHeroPositionX( ) , pHero->getHeroPositionY( ) - ZRB_VISIBLE_SIZE.height - pHero->getHeroContentSize( ).height ) , 1 , 0 );
+			
+			if ( ZRBUserDate::getInstance( )->getDateBool( KEY_CHECK_SOUND ) )
+			{
+				CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Die" ) );
+			}
+
 			this->runAction( Sequence::create( DelayTime::create( 1 ) , CallFunc::create( CC_CALLBACK_0( ZRBGameLayer::showGameFinish , this ) ) , NULL ) );
 		}
 	}
@@ -453,15 +467,13 @@ void ZRBGameLayer::gameBegain( cocos2d::Ref *sender )
 
 void ZRBGameLayer::showGameFinish( )
 {
-	if ( ZRBUserDate::getInstance( )->getDateBool( KEY_CHECK_SOUND ) )
-	{
-		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Die" ) );
-	}
+
 	// 取消的更新日期选择器
 	pause( );
 	pIsLost = true;
 	ZRBGameFinishLayer *layer = ZRBGameFinishLayer::create( );
 	layer->setPosition( 0 , curHeight );
+	layer->setName("finish");
 	layer->setInfo( ( int ) ( pCurrentHeight / standard ) , pGoldNum );
 	this->addChild( layer , layerBatchNodeBaseGame::menuItem , 1000 );
 
@@ -476,24 +488,28 @@ void ZRBGameLayer::showGameFinish( )
 	pMenu->setVisible( false );
 	pMenu->setEnabled( false );
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 	// Todo : ktplay
-	//if ( KTAccountManagerC::isLoggedIn( ) )
-	//{
-	//	KTLeaderboardC::reportScore( int( pCurrentHeight / standard ) , "1234" , KTReportScoreCallBack( ZRBGameLayer::reportScoreCallBack ) );
-	//}
+	if ( KTAccountManagerC::isLoggedIn( ) )
+	{
+		KTLeaderboardC::reportScore( int( pCurrentHeight / standard ) , "1234" , KTReportScoreCallBack( ZRBGameLayer::reportScoreCallBack ) );
+	}
+#endif 
+
 }
 
 
 void ZRBGameLayer::pauseItemClick( cocos2d::Ref *ref )
 {
-	if ( ZRBUserDate::getInstance( )->getDateBool( KEY_CHECK_SOUND ) )
+	if ( !_begainGame || pIsLost || this->getChildByTag(1000) != nullptr )
 	{
-		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
+		return;
 	}
 	// 创建添加暂停层
 	ZRBGameMenuLayer *layer = ZRBGameMenuLayer::create( );
 	layer->setPosition( Point( -ZRB_VISIBLE_SIZE.width / 2 , curHeight - ZRB_VISIBLE_SIZE.height / 2 ) );
 	this->addChild( layer , layerBatchNodeBaseGame::menuItem , 1000 );
+	layer->setName("pause");
 	// 游戏暂停
 	Director::getInstance( )->pause( );
 }

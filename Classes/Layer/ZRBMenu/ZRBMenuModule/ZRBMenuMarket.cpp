@@ -1,4 +1,4 @@
-﻿
+
 
 #include "ZRBMenuMarket.h"
 
@@ -16,7 +16,7 @@ bool ZRBMenuMarket::init( )
 	this->addChild( m , 2 , 11 );
 
 	paging = Layer::create( );
-
+	paging->setName( "mk_p" );
 
 	// Add spriteframecache
 	SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( "homeMenu.plist" );
@@ -32,6 +32,7 @@ bool ZRBMenuMarket::init( )
 	_backboard->setPreferredSize( ZRB_VISIBLE_SIZE * 0.8 );
 	// 设置背板位置
 	_backboard->setPosition( ZRB_VISIBLE_SIZE.width / 2 + 40 , ZRB_VISIBLE_SIZE.height * 3 / 2 );
+	
 	// 添加背板
 	this->addChild( _backboard , 10 );
 
@@ -178,6 +179,7 @@ void ZRBMenuMarket::call_role( )
 
 	// 创建人物购买分页
 	auto layer = ZRBMarketRole::create( );
+	layer->setName( "mk_p_c" );
 	// 设置大小
 	layer->setPosition( size.width * 0.1 , size.height * 0.18 );
 	// 添加分页
@@ -208,6 +210,7 @@ void ZRBMenuMarket::call_gold_buy( )
 
 	// 创建金币购买分页
 	auto layer = ZRBMarketGold::create( );
+	layer->setName( "mk_p_c" );
 	// 设置大小
 	layer->setPosition( size.width * 0.1 , size.height * 0.18 );
 	// 添加分页
@@ -243,7 +246,7 @@ void ZRBMenuMarket::call_back( )
 void ZRBMenuMarket::call_clear( )
 {
 	// 移除菜单 清理
-	this->removeAllChildrenWithCleanup( true );
+	this->removeFromParentAndCleanup( true );
 }
 
 void ZRBMenuMarket::setGoldNum( cocos2d::Ref *sender )

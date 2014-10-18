@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -17,17 +17,29 @@
 	<key>Market_gold</key>
 	<string>GOLE</string>
 	<key>Market_role_name_1</key>
-	<string>role_1</string>
+	<string>Tropius</string>
 	<key>Market_role_name_2</key>
-	<string>role_2</string>
+	<string>spinarak</string>
 	<key>Market_role_name_3</key>
-	<string>role_3</string>
+	<string>Hoothoot</string>
+	<key>Market_role_name_4</key>
+	<string>Spoink</string>
+	<key>Market_role_name_5</key>
+	<string>Magcargo</string>
+	<key>Market_role_name_6</key>
+	<string>Grotle</string>
 	<key>Market_role_chr_1</key>
-	<string>Gold +10%</string>
+	<string></string>
 	<key>Market_role_chr_2</key>
 	<string>Gold +10%</string>
 	<key>Market_role_chr_3</key>
 	<string>Gold +10%</string>
+	<key>Market_role_chr_4</key>
+	<string>Gold +30%</string>
+	<key>Market_role_chr_5</key>
+	<string>Gold +50%</string>
+	<key>Market_role_chr_6</key>
+	<string>Gold +75%</string>
 	<key>Ranking_Rank</key>
 	<string>Current :</string>
 	<key>Ranking_curRank</key>
@@ -77,9 +89,9 @@
 	<key>Gold_price_2</key>
 	<string>1.99</string>
 	<key>Gold_price_3</key>
-	<string>2.99</string>
-	<key>Gold_price_4</key>
 	<string>3.99</string>
+	<key>Gold_price_4</key>
+	<string>4.99</string>
 	<key>Pic_hot_sale</key>
 	<string>hot_sale_en.png</string>
 	<key>Pic_pause_backgame</key>
@@ -94,15 +106,15 @@
 	<string>button_buy_en.png</string>
 	<key>Pic_ranking</key>
 	<string>ranking_en.png</string>
-  <key>Music_Bg</key>
-  <string>Bgmusic.mp3</string>
-  <key>Music_Btclick</key>
-  <string>buttonClick.mp3</string>
-  <key>Music_Die</key>
-  <string>Die.mp3</string>
-  <key>Music_Gold</key>
-  <string>Goldcoin.wav</string>
-  <key>Music_Jump</key>
-  <string>Jump.mp3</string>
+	<key>Music_Bg</key>
+	<string>Bgmusic.mp3</string>
+	<key>Music_Btclick</key>
+	<string>buttonClick.mp3</string>
+	<key>Music_Die</key>
+	<string>Die.mp3</string>
+	<key>Music_Gold</key>
+	<string>Goldcoin.wav</string>
+	<key>Music_Jump</key>
+	<string>Jump.mp3</string>
 </dict>
 </plist>

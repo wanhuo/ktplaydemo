@@ -17,13 +17,15 @@ public:
 	// Todo: 跳转的场景 void setSceneManager( ZRBSceneManager _manager );
 	// 设置成绩和金币
 	void setInfo( int _distance , int _glod );
-private:
-
-	void initLayer( );
 
 	void rankingClick( Ref *ref );
 	void restartClick( Ref *ref );
 	void homeClick( Ref *ref );
+
+private:
+
+	void initLayer( );
+
 
 	std::vector<float>addition;
 	//todo : 跳转场景

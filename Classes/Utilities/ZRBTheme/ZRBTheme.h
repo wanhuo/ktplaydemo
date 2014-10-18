@@ -26,6 +26,7 @@ struct sHero
 	string NameAfter;
 	int climbAnimationImageNum;
 	int jumpAnimationImageNum;
+	int dieAnimationImageNum;
 };
 
 
@@ -35,9 +36,13 @@ public:
 	static sMaterial* getMaterialSummer( );
 	static sMaterial* getMaterialSweet( );
 	static sMaterial* getMaterialBlueSky( );
-	static sHero* getHeroDragon( );
-	static sHero* getHeroPink( );
-	static sHero* getHeroSnail( );
+
+	static sHero * getHeroGrotle( );
+	static sHero * getHeroHoot( );
+	static sHero * getHeroSpoink( );
+	static sHero * getHeroTropius( );
+	static sHero * getHeroMagcargo( );
+	static sHero * getHeroSpinarak( );
 
 	static void setCurrentMaterial( sMaterial *_material );
 	static sMaterial* getCurrentMaterial( );

@@ -5,9 +5,12 @@
 
 ZRBGameFinishLayer::ZRBGameFinishLayer( )
 {
+	addition.push_back( 0 );
 	addition.push_back( 0.1 );
 	addition.push_back( 0.1 );
-	addition.push_back( 0.1 );
+	addition.push_back( 0.3 );
+	addition.push_back( 0.5 );
+	addition.push_back( 0.75 );
 }
 
 ZRBGameFinishLayer::~ZRBGameFinishLayer( )
@@ -189,7 +192,9 @@ void ZRBGameFinishLayer::rankingClick( Ref *ref )
 	{
 		CocosDenshion::SimpleAudioEngine::getInstance( )->playEffect( ZRBLanguage::getValue( "Music_Btclick" ) );
 	}
-	this->addChild( ZRBMenuChars::create( ) , 10 );
+	auto ranking = ZRBMenuChars::create( );
+	ranking->setName( "ranking" );
+	this->addChild( ranking , 10 );
 }
 
 void ZRBGameFinishLayer::restartClick( Ref *ref )

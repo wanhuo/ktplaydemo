@@ -48,8 +48,9 @@ void ZRBBaseGameLayer::initObject( )
 	// 创建精灵
 	pHero = ZRBHeroSprite::create( heroMaterial );
 	// 加载背景素材
-	SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( material->plist );
-	pBatchNode = SpriteBatchNode::create( material->png );
+	//SpriteFrameCache::getInstance( )->addSpriteFramesWithFile( material->plist );
+	//pBatchNode = SpriteBatchNode::create( material->png );
+	pBatchNode = SpriteBatchNode::createWithTexture( Director::getInstance( )->getTextureCache()->getTextureForKey( material->png ) );
 	pBatchNode->retain( );
 	// 素材名
 	pNameAfterStr = material->NameAfter;
@@ -154,7 +155,7 @@ void ZRBBaseGameLayer::update( float delta )
 	// 当前高度更新
 	pCurrentHeight = pCurrentHeight + upHeight;
 	// 成绩更新 位置更新
-	pScoreLabel->setString( String::createWithFormat( "%d米" , ( int ) ( pCurrentHeight / standard ) )->getCString( ) );
+	pScoreLabel->setString( String::createWithFormat( "%m" , ( int ) ( pCurrentHeight / standard ) )->getCString( ) );
 	pScoreLabel->setPositionY( pScoreLabel->getPositionY( ) + upHeight );
 	// 金币位置更新
 	pGoldNumLabel->setPositionY( pGoldNumLabel->getPositionY( ) + upHeight );

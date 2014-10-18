@@ -34,7 +34,7 @@ private:
 	Label * pGoldNum;
 
 	//  保存 market 弹窗大小
-	Size size;
+	cocos2d::Size size;
 
 	// 创建 _backboard 接收 menubase中的点九图
 	CC_SYNTHESIZE_RETAIN( Scale9Sprite * , _backboard , Backboard );

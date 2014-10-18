@@ -1,4 +1,4 @@
-﻿
+
 
 #ifndef __ZRBGameMenuLayer_H__
 #define __ZRBGameMenuLayer_H__
@@ -8,8 +8,8 @@
 
 #include "../../ZRBAuxiliary/ZRBLoadingLayer.h"
 
-#include "Utilities/ZRBLanguage/ZRBLanguage.h"
 #include "Utilities/ZRBUserDate/ZRBUserDate.h"
+#include "Utilities/ZRBLanguage/ZRBLanguage.h"
 
 class ZRBGameMenuLayer :public Layer
 {
@@ -26,8 +26,10 @@ private:
 
 	void initObject( );
 	
+public:
+
 	void backGameItemClick( Ref *ref );
-	
+
 	void backHomeItemClick( Ref *ref );
 	
 	void restartGameItemClick( Ref *ref );

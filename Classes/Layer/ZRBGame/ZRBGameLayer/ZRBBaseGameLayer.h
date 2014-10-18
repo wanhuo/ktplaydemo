@@ -74,7 +74,7 @@ protected:
 	*
 	*  @return 返回藤条
 	*/
-	virtual Sprite * createTimbo( float length , Point pos );
+	virtual Sprite * createTimbo( float length , Vec2 pos );
 
 	//初始化藤
 	virtual void initTimbos( );
@@ -146,7 +146,7 @@ protected:
 	//精灵
 	ZRBHeroSprite *pHero;
 	/// 按钮原始大小
-	Size pItemDefaultSize;
+	cocos2d::Size pItemDefaultSize;
 
 	///5种颜色
 	Color3B pAllColors [ 5 ];

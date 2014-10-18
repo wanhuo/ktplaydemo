@@ -147,6 +147,9 @@
     <ClCompile Include="..\Classes\Layer\ZRBGame\ZRBGameLayer\ZRBGameLayer.cpp">
       <Filter>Classes\Layer\ZRBGame\ZRBGameLayer</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Scene\ZRBThreadLoading.cpp">
+      <Filter>Classes\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -224,6 +227,9 @@
     <ClInclude Include="..\Classes\Layer\ZRBGame\ZRBGameLayer\ZRBGameLayer.h">
       <Filter>Classes\Layer\ZRBGame\ZRBGameLayer</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Scene\ZRBThreadLoading.h">
+      <Filter>Classes\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
@@ -257,20 +263,32 @@
     <None Include="..\Resources\material\sweet_material.plist">
       <Filter>resource\material</Filter>
     </None>
-    <None Include="..\Resources\hero\dragon_hero.plist">
-      <Filter>resource\hero</Filter>
-    </None>
-    <None Include="..\Resources\hero\pink_heor.plist">
-      <Filter>resource\hero</Filter>
-    </None>
-    <None Include="..\Resources\hero\snail_heor.plist">
-      <Filter>resource\hero</Filter>
-    </None>
     <None Include="..\Resources\Language\en.plist">
       <Filter>resource\Language</Filter>
     </None>
     <None Include="..\Resources\Language\zh.plist">
       <Filter>resource\Language</Filter>
+    </None>
+    <None Include="..\Resources\hero\grotle_hero.plist">
+      <Filter>resource\hero</Filter>
+    </None>
+    <None Include="..\Resources\hero\hoot_hero.plist">
+      <Filter>resource\hero</Filter>
+    </None>
+    <None Include="..\Resources\hero\magcargo_hero.plist">
+      <Filter>resource\hero</Filter>
+    </None>
+    <None Include="..\Resources\hero\spinarak_hero.plist">
+      <Filter>resource\hero</Filter>
+    </None>
+    <None Include="..\Resources\hero\tropius_hero.plist">
+      <Filter>resource\hero</Filter>
+    </None>
+    <None Include="..\Resources\menu\Gold_pic.plist">
+      <Filter>resource\menu</Filter>
+    </None>
+    <None Include="..\Resources\hero\spoink_hero.plist">
+      <Filter>resource\hero</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -292,15 +310,6 @@
     <Image Include="..\Resources\material\sweet_material.png">
       <Filter>resource\material</Filter>
     </Image>
-    <Image Include="..\Resources\hero\dragon_hero.png">
-      <Filter>resource\hero</Filter>
-    </Image>
-    <Image Include="..\Resources\hero\pink_heor.png">
-      <Filter>resource\hero</Filter>
-    </Image>
-    <Image Include="..\Resources\hero\snail_heor.png">
-      <Filter>resource\hero</Filter>
-    </Image>
     <Image Include="..\Resources\CloseNormal.png">
       <Filter>resource</Filter>
     </Image>
@@ -315,6 +324,27 @@
     </Image>
     <Image Include="..\Resources\star.png">
       <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\grotle_hero.png">
+      <Filter>resource\hero</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\hoot_hero.png">
+      <Filter>resource\hero</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\magcargo_hero.png">
+      <Filter>resource\hero</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\spinarak_hero.png">
+      <Filter>resource\hero</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\tropius_hero.png">
+      <Filter>resource\hero</Filter>
+    </Image>
+    <Image Include="..\Resources\menu\Gold_pic.png">
+      <Filter>resource\menu</Filter>
+    </Image>
+    <Image Include="..\Resources\hero\spoink_hero.png">
+      <Filter>resource\hero</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

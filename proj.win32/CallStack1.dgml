@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(Name=&quot;cocos2d::Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,cocos2d::SpriteFrame *&gt;::insert&quot; @4 @16 OverloadingParameters=[(@34 Name=key),(Type=&quot;cocos2d::SpriteFrame *&quot; Name=object)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1585.54166666667,1219.865,62.02,25.24" Label="Map" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/ccmap.h StartLineNumber=227 StartCharacterOffset=0 EndLineNumber=227 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=&quot;std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;::operator()&quot; @4 @16 OverloadingParameters=[(Type=&quot;ZRBMenu *&quot; Name=_Pfnobj)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="496.621666666667,1219.865,97.8599999999999,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Pmf_wrap" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/functional&quot; StartLineNumber=1229 StartCharacterOffset=0 EndLineNumber=1229 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 @16 OverloadingParameters=[(@33 Name=_Ptr)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="841.896666666667,482.524999999998,103.31,25.24" CodeSchemaProperty_IsExternal="True" Label="basic_string" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xstring&quot; StartLineNumber=685 StartCharacterOffset=0 EndLineNumber=685 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=&quot;std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; OverloadingParameters=[(@33 Name=_Left),(@34 Name=_Right)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="759.1,978.602499999997,94.9033333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="operator+" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xstring&quot; StartLineNumber=2185 StartCharacterOffset=0 EndLineNumber=2185 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=&quot;std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; OverloadingParameters=[(Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &amp;&amp;&quot; Name=_Left),(@33 Name=_Right)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="884.1,978.602499999997,94.9033333333332,25.24" CodeSchemaProperty_IsExternal="True" Label="operator+" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xstring&quot; StartLineNumber=2344 StartCharacterOffset=0 EndLineNumber=2344 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=&quot;std::set&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt;::insert&quot; @4 Type=&quot;std::pair&lt;std::_Tree_const_iterator&lt;std::_Tree_val&lt;std::_Tree_simple_types&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;,bool&gt;&quot; OverloadingParameters=[(@34 Name=_Val)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1756.135,1149.385,52.8333333333335,25.24" CodeSchemaProperty_IsExternal="True" Label="set">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=0fe0a5e0 @1 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="666.271666666667,1219.865,88.5599999999999,25.24" CodeSchemaProperty_IsExternal="True" Label="0fe0a5e0">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=5072a5e0 @1 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="941.72,56.9274999999998,91.6633333333334,25.24" CodeSchemaProperty_IsExternal="True" Label="5072a5e0">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=50a1a5e0 @1 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="701.921666666667,56.9275000000002,91.26,25.24" CodeSchemaProperty_IsExternal="True" Label="50a1a5e0">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=77cbcf87 @3 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="823.55,56.9274999999998,88.0033333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="77cbcf87">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="(Name=CocosDenshion::MciPlayer::Play @4 @16 OverloadingParameters=[(Type=&quot;unsigned int&quot; Name=uTimes)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="255.791666666667,1035.53,59.52,25.2399999999998" Label="Play" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/audio/win32/mciplayer.cpp StartLineNumber=100 StartCharacterOffset=0 EndLineNumber=100 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=CocosDenshion::SimpleAudioEngine::getInstance @4 Type=&quot;CocosDenshion::SimpleAudioEngine *&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="117.175,978.602499999997,102.753333333333,25.24" Label="getInstance" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/audio/win32/simpleaudioengine.cpp StartLineNumber=68 StartCharacterOffset=0 EndLineNumber=68 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=ZRBGameLayer::ZRBGameLayer @4 @16 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="959.078333333333,851.194999999997,122.946666666667,25.24" Label="ZRBGameLayer">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="(Name=ZRBLanguage::getValue @4 @33 OverloadingParameters=[(@34 Name=key)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,978.602499999997,87.1033333333335,25.24" Label="getValue" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/utilities/zrblanguage/zrblanguage.cpp StartLineNumber=11 StartCharacterOffset=0 EndLineNumber=11 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=ZRBMenu::ZRBMenu @4 @16 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="751.49,851.194999999997,92.1233333333334,25.24" Label="ZRBMenu" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenu.cpp StartLineNumber=411 StartCharacterOffset=0 EndLineNumber=411 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=ZRBMenu::init @4 @5 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="666.426666666667,851.194999999997,54.25,25.24" Label="init">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="(Name=ZRBMenuChars::init @4 @5 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="634.426666666667,1035.53,54.25,25.2399999999998" Label="init" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenumodule/zrbmenuchars.cpp StartLineNumber=8 StartCharacterOffset=0 EndLineNumber=8 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=ZRBPageView::ZRBPageView @4 @16 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="727.121666666666,737.339999999997,114.86,25.24" Label="ZRBPageView">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="(Name=cocos2d::Layer::Layer @4 @16 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="986.285,666.859999999997,66.5333333333333,25.24" Label="Layer">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="(Name=cocos2d::Node::runAction @4 Type=&quot;cocos2d::Action *&quot; OverloadingParameters=[(Type=&quot;cocos2d::Action *&quot; Name=action)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="373.293333333334,978.602499999997,92.5166666666667,25.24" Label="runAction" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccnode.cpp StartLineNumber=1414 StartCharacterOffset=0 EndLineNumber=1414 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=cocos2d::Sprite::getTexture @4 Type=&quot;cocos2d::Texture2D *&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="836.558333333333,1219.865,97.9866666666667,25.24" Label="getTexture" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=352 StartCharacterOffset=0 EndLineNumber=352 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=cocos2d::Sprite::initWithTexture @4 @5 OverloadingParameters=[@58,(Type=&quot;const cocos2d::Rect &amp;&quot; Name=rect),(@5 Name=rotated)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1112.28,1219.865,124.543333333333,25.24" Label="initWithTexture" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=219 StartCharacterOffset=0 EndLineNumber=219 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=cocos2d::Sprite::setSpriteFrame @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::SpriteFrame *&quot; Name=spriteFrame)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="959.49,1149.385,122.123333333333,25.24" Label="setSpriteFrame" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=951 StartCharacterOffset=0 EndLineNumber=951 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=cocos2d::SpriteFrame::getRect @4 Type=&quot;const cocos2d::Rect &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1267.50833333333,1149.385,80.0866666666666,25.24" Label="getRect" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframe.h StartLineNumber=83 StartCharacterOffset=0 EndLineNumber=83 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=cocos2d::SpriteFrame::getTexture @4 Type=&quot;cocos2d::Texture2D *&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1378.55833333333,1149.385,97.9866666666667,25.24" Label="getTexture" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframe.cpp StartLineNumber=183 StartCharacterOffset=0 EndLineNumber=183 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="(Name=std::_Iterator_base12::_Getcont @4 Type=&quot;const std::_Container_base12 *&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="359.005,1219.865,87.0933333333332,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Getcont" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xutility&quot; StartLineNumber=174 StartCharacterOffset=0 EndLineNumber=174 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@10" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1359.175,1035.53,102.753333333333,25.24" Label="getInstance">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="327.221666666667,1149.385,150.66,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Tree_const_iterator" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xtree&quot; StartLineNumber=231 StartCharacterOffset=0 EndLineNumber=231 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@13" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1084.86666666667,113.855,55.3699999999999,25.24" Label="run" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/win32/ccapplication.cpp StartLineNumber=90 StartCharacterOffset=0 EndLineNumber=90 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@14" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="345.443333333333,1092.4575,114.216666666667,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Tree_iterator" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xtree&quot; StartLineNumber=402 StartCharacterOffset=0 EndLineNumber=402 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@15" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="345.443333333333,1035.53,114.216666666667,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Tree_iterator" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xtree&quot; StartLineNumber=406 StartCharacterOffset=0 EndLineNumber=406 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@17" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1063.39,241.262499999999,98.3233333333333,25.24" Label="drawScene" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/ccdirector.cpp StartLineNumber=272 StartCharacterOffset=0 EndLineNumber=272 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1065.78,170.782499999999,93.5433333333335,25.24" Label="mainLoop" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/ccdirector.cpp StartLineNumber=1269 StartCharacterOffset=0 EndLineNumber=1269 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@19" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="940.15,170.782499999999,94.8033333333333,25.24" Label="pollEvents" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/desktop/ccglview.cpp StartLineNumber=437 StartCharacterOffset=0 EndLineNumber=437 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@20" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="505.288333333334,851.194999999997,80.5266666666666,25.24" Label="activate" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccmenuitem.cpp StartLineNumber=121 StartCharacterOffset=0 EndLineNumber=121 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="576.288333333334,794.267499999997,80.5266666666666,25.24" Label="activate" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccmenuitem.cpp StartLineNumber=259 StartCharacterOffset=0 EndLineNumber=259 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="855.453333333333,921.674999999997,92.1966666666667,25.24" Label="initObject" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbgame/zrbgamelayer/zrbbasegamelayer.cpp StartLineNumber=47 StartCharacterOffset=0 EndLineNumber=47 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@23" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="957.401666666667,596.379999999997,124.3,25.24" Label="ZRBHomeLayer">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="626.228333333333,921.674999999997,70.6466666666668,25.24" Label="charts" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenu.cpp StartLineNumber=374 StartCharacterOffset=0 EndLineNumber=374 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="152.768333333334,921.674999999997,75.5666666666666,25.24" Label="setting" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenu.cpp StartLineNumber=323 StartCharacterOffset=0 EndLineNumber=323 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@26" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="376.92,921.674999999997,87.2633333333333,25.24" Label="call_back" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenumodule/zrbmenuchars.cpp StartLineNumber=278 StartCharacterOffset=0 EndLineNumber=278 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@27" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="258.92,921.674999999997,87.2633333333333,25.24" Label="call_back" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenumodule/zrbmenuset.cpp StartLineNumber=225 StartCharacterOffset=0 EndLineNumber=225 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@28" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="865.89,794.267499999997,71.3233333333333,25.24" Label="create">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@29" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="983.89,539.452499999998,71.3233333333333,25.24" Label="create">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@30" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="761.89,794.267499999997,71.3233333333333,25.24" Label="create">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@31" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="625.89,978.602499999997,71.3233333333333,25.24" Label="create" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbmenu/zrbmenumodule/zrbmenuchars.h StartLineNumber=48 StartCharacterOffset=0 EndLineNumber=48 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@32" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="863.89,666.859999999997,71.3233333333333,25.24" Label="create">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="@35" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="495.108333333333,921.674999999997,100.886666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="_Func_class" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/functional&quot; StartLineNumber=314 StartCharacterOffset=0 EndLineNumber=314 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@36" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="490.248333333333,1035.53,110.606666666667,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Callable_obj" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/xrefwrap&quot; StartLineNumber=283 StartCharacterOffset=0 EndLineNumber=283 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@37" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="495.936666666667,978.602499999997,99.23,25.24" CodeSchemaProperty_IsExternal="True" Label="_Func_impl" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/functional&quot; StartLineNumber=228 StartCharacterOffset=0 EndLineNumber=228 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@38" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="511.965,1092.4575,67.1733333333334,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Bind" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/functional&quot; StartLineNumber=1137 StartCharacterOffset=0 EndLineNumber=1137 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@39" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="844.818333333333,1092.4575,87.4666666666667,25.24" Label="addChild" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccnode.cpp StartLineNumber=1025 StartCharacterOffset=0 EndLineNumber=1025 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@41" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1087.55166666667,368.669999999998,50,25.24" Label="" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/ccscheduler.h StartLineNumber=246 StartCharacterOffset=0 EndLineNumber=246 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@42" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1074.22833333333,298.189999999999,76.6466666666665,25.24" Label="update" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/ccscheduler.cpp StartLineNumber=860 StartCharacterOffset=0 EndLineNumber=860 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@43" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1074.22833333333,425.597499999998,76.6466666666665,25.24" Label="update" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/scene/zrbthreadloading.cpp StartLineNumber=77 StartCharacterOffset=0 EndLineNumber=77 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@44" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="695.468333333333,482.524999999998,116.166666666667,25.24" Label="dispatchEvent" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/cceventdispatcher.cpp StartLineNumber=800 StartCharacterOffset=0 EndLineNumber=800 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@45" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="677.813333333333,539.452499999998,151.476666666667,25.24" Label="dispatchTouchEvent" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/cceventdispatcher.cpp StartLineNumber=947 StartCharacterOffset=0 EndLineNumber=947 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@46" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="849.918333333333,1035.53,77.2666666666667,25.24" Label="initThis" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbgame/zrbherosprite.cpp StartLineNumber=87 StartCharacterOffset=0 EndLineNumber=87 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@47" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1009.89,978.602499999997,71.3233333333333,25.24" Label="create" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbgame/zrbherosprite.cpp StartLineNumber=13 StartCharacterOffset=0 EndLineNumber=13 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@48" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="726.551666666667,666.859999999997,50,25.24" Label="" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/cceventdispatcher.cpp StartLineNumber=904 StartCharacterOffset=0 EndLineNumber=904 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@49" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="957.266666666667,1035.53,172.57,25.24" Label="getSpriteFrameByName" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframecache.cpp StartLineNumber=391 StartCharacterOffset=0 EndLineNumber=391 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@50" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1316.72,1092.4575,179.663333333333,25.24" Label="addSpriteFramesWithFile" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframecache.cpp StartLineNumber=270 StartCharacterOffset=0 EndLineNumber=270 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@51" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1135.15,1092.4575,150.803333333333,25.24" Label="initWithSpriteFrame" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=215 StartCharacterOffset=0 EndLineNumber=215 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@52" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1160.61333333333,1035.53,167.876666666667,25.24" Label="createWithSpriteFrame" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=114 StartCharacterOffset=0 EndLineNumber=114 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@53" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1143.39166666667,978.602499999997,202.32,25.24" Label="createWithSpriteFrameName" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=131 StartCharacterOffset=0 EndLineNumber=131 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@54" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="511.965,1149.385,67.1733333333334,25.2399999999998" CodeSchemaProperty_IsExternal="True" Label="_Bind" SourceLocation="(Assembly=&quot;file:///c:/program files (x86)/microsoft visual studio 12.0/vc/include/functional&quot; StartLineNumber=1149 StartCharacterOffset=0 EndLineNumber=1149 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="ExternalCallStackEntry" />
+    </Node>
+    <Node Id="@55" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="610.035,1149.385,201.033333333333,25.24" Label="cpSpaceProcessComponents" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/external/chipmunk/src/cpspacecomponent.c StartLineNumber=259 StartCharacterOffset=0 EndLineNumber=259 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@56" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="555.308333333333,737.339999999997,122.486666666667,25.24" Label="onTouchEnded" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccmenu.cpp StartLineNumber=270 StartCharacterOffset=0 EndLineNumber=270 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@57" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="660.951666666667,596.379999999998,181.2,25.24" Label="dispatchEventToListeners" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/base/cceventdispatcher.cpp StartLineNumber=757 StartCharacterOffset=0 EndLineNumber=757 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@59" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1112.28,1149.385,124.543333333333,25.24" Label="initWithTexture" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccsprite.cpp StartLineNumber=165 StartCharacterOffset=0 EndLineNumber=165 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@6" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="874.426666666667,851.194999999997,54.25,25.24" Label="init" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrbgame/zrbgamelayer/zrbgamelayer.cpp StartLineNumber=45 StartCharacterOffset=0 EndLineNumber=45 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@60" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1507.20333333333,1149.385,218.696666666667,25.24" Label="addSpriteFramesWithDictionary" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframecache.cpp StartLineNumber=196 StartCharacterOffset=0 EndLineNumber=196 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@61" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1526.72,1092.4575,179.663333333333,25.24" Label="addSpriteFramesWithFile" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspriteframecache.cpp StartLineNumber=197 StartCharacterOffset=0 EndLineNumber=197 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@62" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="684.818333333333,1092.4575,87.4666666666667,25.2399999999998" Label="addChild" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccnode.cpp StartLineNumber=1019 StartCharacterOffset=0 EndLineNumber=1019 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@63" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="841.818333333333,1149.385,87.4666666666667,25.24" Label="addChild" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/2d/ccspritebatchnode.cpp StartLineNumber=193 StartCharacterOffset=0 EndLineNumber=193 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@64" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="861.773333333333,241.262499999999,171.556666666667,25.24" Label="onGLFWMouseCallBack" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/desktop/ccglview.cpp StartLineNumber=53 StartCharacterOffset=0 EndLineNumber=53 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@65" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="861.773333333333,298.189999999999,171.556666666667,25.24" Label="onGLFWMouseCallBack" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/desktop/ccglview.cpp StartLineNumber=563 StartCharacterOffset=0 EndLineNumber=563 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@66" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1063.945,56.9274999999998,97.2133333333331,25.24" Label="wWinMain" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/proj.win32/main.cpp StartLineNumber=16 StartCharacterOffset=0 EndLineNumber=16 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@67" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="875.333333333333,368.669999999998,144.436666666667,25.24" Label="handleTouchesEnd" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/ccglviewprotocol.cpp StartLineNumber=396 StartCharacterOffset=0 EndLineNumber=396 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@68" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="250.525,978.602499999997,92.0533333333333,25.24" Label="playEffect" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/audio/win32/simpleaudioengine.cpp StartLineNumber=155 StartCharacterOffset=0 EndLineNumber=155 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@69" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="833.145,425.597499999998,210.813333333333,25.24" Label="handleTouchesOfEndOrCancel" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/cocos2d/cocos/platform/ccglviewprotocol.cpp StartLineNumber=385 StartCharacterOffset=0 EndLineNumber=385 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="872.426666666667,596.379999999997,54.25,25.24" Label="init" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrblayer/zrbhomelayer.cpp StartLineNumber=60 StartCharacterOffset=0 EndLineNumber=60 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="872.426666666667,737.339999999997,54.25,25.24" Label="init" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/layer/zrblayer/zrbpageview.cpp StartLineNumber=46 StartCharacterOffset=0 EndLineNumber=46 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@9" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="975.593333333333,482.524999999998,105.916666666667,25.24" Label="sceneCreate" SourceLocation="(Assembly=file:///d:/cocos2d-x/workspace/colorjump/classes/scene/zrbscene.cpp StartLineNumber=14 StartCharacterOffset=0 EndLineNumber=14 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="953.551666666667,-1.77635683940025E-15,68,25.24" Label="外部代码">
+      <Category Ref="CallStackEntry" />
+    </Node>
+  </Nodes>
+  <Links>
+    <Link Source="@11" Target="(Name=std::_Iterator_base12::_Getcont @4 Type=&quot;const std::_Container_base12 *&quot; @2)" Category="CallStackDirectCall" Bounds="402.551666259766,1174.625,0,36.239990234375" />
+    <Link Source="@13" Target="@18" Category="CallStackDirectCall" Bounds="1112.55163574219,139.095001220703,0,22.6875" />
+    <Link Source="@13" Target="@19" Category="CallStackDirectCall" Bounds="1023.45294189453,138.520858764648,62.6487426757813,28.5314788818359" />
+    <Link Source="@14" Target="@11" Category="CallStackDirectCall" Bounds="402.551666259766,1117.69750976563,0,22.6875" />
+    <Link Source="@15" Target="@14" Category="CallStackDirectCall" Bounds="402.551666259766,1060.77001953125,0,22.6875" />
+    <Link Source="@17" Target="@42" Category="CallStackDirectCall" Bounds="1112.55163574219,266.502502441406,0,22.6875" />
+    <Link Source="@18" Target="@17" Category="CallStackDirectCall" Bounds="1112.55163574219,196.022506713867,0,36.239990234375" />
+    <Link Source="@19" Target="@64" Category="CallStackIndirectCall" Bounds="959.15625,196.022506713867,21.2330932617188,37.4127197265625" Label="外部代码" LabelBounds="919.551666666667,211.022499999999,48,15.2399999999998" />
+    <Link Source="@20" Target="@24" Category="CallStackIndirectCall" Bounds="566.322387695313,876.434997558594,66.7669677734375,40.5667114257813" Label="外部代码" LabelBounds="603.551666666667,891.434999999997,48,15.24" />
+    <Link Source="@20" Target="@25" Category="CallStackIndirectCall" Bounds="237.070037841797,870.476379394531,268.218292236328,52.2742309570313" Label="外部代码" LabelBounds="284.551666666667,891.434999999997,48,15.24" />
+    <Link Source="@20" Target="@26" Category="CallStackIndirectCall" Bounds="444.170532226563,876.434997558594,73.0899658203125,39.7681274414063" Label="外部代码" LabelBounds="466.551666666667,891.434999999997,48,15.24" />
+    <Link Source="@20" Target="@27" Category="CallStackIndirectCall" Bounds="352.655822753906,874.959533691406,153.048767089844,44.2442626953125" Label="外部代码" LabelBounds="371.551666666667,891.434999999997,48,15.24" />
+    <Link Source="@20" Target="@35" Category="CallStackDirectCall" Bounds="545.551696777344,876.434997558594,0,36.239990234375" />
+    <Link Source="@21" Target="@20" Category="CallStackDirectCall" Bounds="568.31298828125,819.507507324219,32.4990234375,26.0575561523438" />
+    <Link Source="@22" Target="(Name=&quot;std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; OverloadingParameters=[(@33 Name=_Left),(@34 Name=_Right)] @2)" Category="CallStackDirectCall" Bounds="835.331848144531,946.914978027344,45.15966796875,27.0614013671875" />
+    <Link Source="@22" Target="(Name=&quot;std::operator+&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; OverloadingParameters=[(Type=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &amp;&amp;&quot; Name=_Left),(@33 Name=_Right)] @2)" Category="CallStackDirectCall" Bounds="908.202209472656,946.914978027344,12.5029907226563,23.7254638671875" />
+    <Link Source="@22" Target="@47" Category="CallStackDirectCall" Bounds="933.474365234375,946.914978027344,71.784912109375,28.3787231445313" />
+    <Link Source="@22" Target="@53" Category="CallStackDirectCall" Bounds="947.650024414063,941.945922851563,211.984985351563,35.1829833984375" />
+    <Link Source="@22" Target="@62" Category="CallStackDirectCall" Bounds="728.551696777344,941.879577636719,126.901611328125,141.577941894531" />
+    <Link Source="@23" Target="(Name=cocos2d::Layer::Layer @4 @16 @2)" Category="CallStackDirectCall" Bounds="1019.55169677734,621.619995117188,0,36.239990234375" />
+    <Link Source="@24" Target="@31" Category="CallStackDirectCall" Bounds="661.551696777344,946.914978027344,0,22.6875" />
+    <Link Source="@25" Target="(Name=CocosDenshion::SimpleAudioEngine::getInstance @4 Type=&quot;CocosDenshion::SimpleAudioEngine *&quot; @2)" Category="CallStackDirectCall" Bounds="176.67301940918,946.914978027344,9.00157165527344,23.2926025390625" />
+    <Link Source="@25" Target="(Name=ZRBLanguage::getValue @4 @33 OverloadingParameters=[(@34 Name=key)] @2)" Category="CallStackDirectCall" Bounds="84.5320816040039,946.914978027344,73.4318161010742,28.4373779296875" />
+    <Link Source="@25" Target="@68" Category="CallStackDirectCall" Bounds="214.050323486328,946.914978027344,51.0737915039063,27.4293212890625" />
+    <Link Source="@26" Target="(Name=cocos2d::Node::runAction @4 Type=&quot;cocos2d::Action *&quot; OverloadingParameters=[(Type=&quot;cocos2d::Action *&quot; Name=action)] @2)" Category="CallStackDirectCall" Bounds="420.277435302734,946.914978027344,0.27423095703125,22.6919555664063" />
+    <Link Source="@27" Target="@68" Category="CallStackDirectCall" Bounds="298.825134277344,946.914978027344,2.39642333984375,22.7371215820313" />
+    <Link Source="@28" Target="(Name=ZRBGameLayer::ZRBGameLayer @4 @16 @2)" Category="CallStackDirectCall" Bounds="927.932250976563,819.507507324219,58.1199951171875,27.8035888671875" />
+    <Link Source="@28" Target="@6" Category="CallStackDirectCall" Bounds="901.551696777344,819.507507324219,0,22.6875" />
+    <Link Source="@29" Target="@23" Category="CallStackDirectCall" Bounds="1019.55169677734,564.692504882813,0,22.6875" />
+    <Link Source="@29" Target="@7" Category="CallStackDirectCall" Bounds="933.365905761719,564.692504882813,59.58349609375,28.2661743164063" />
+    <Link Source="@30" Target="(Name=ZRBMenu::ZRBMenu @4 @16 @2)" Category="CallStackDirectCall" Bounds="797.551696777344,819.507507324219,0,22.6875" />
+    <Link Source="@30" Target="(Name=ZRBMenu::init @4 @5 @2)" Category="CallStackDirectCall" Bounds="724.501647949219,819.507507324219,49.9947509765625,27.3660888671875" />
+    <Link Source="@31" Target="(Name=ZRBMenuChars::init @4 @5 @2)" Category="CallStackDirectCall" Bounds="661.551696777344,1003.84252929688,0,22.6875" />
+    <Link Source="@32" Target="(Name=ZRBPageView::ZRBPageView @4 @16 @2)" Category="CallStackDirectCall" Bounds="812.816833496094,692.099975585938,66.1431884765625,40.5371704101563" />
+    <Link Source="@32" Target="@8" Category="CallStackDirectCall" Bounds="899.551696777344,692.099975585938,0,36.2400512695313" />
+    <Link Source="@35" Target="@37" Category="CallStackDirectCall" Bounds="545.551696777344,946.914978027344,0,22.6875" />
+    <Link Source="@36" Target="@38" Category="CallStackDirectCall" Bounds="545.551696777344,1060.77001953125,0,22.6875" />
+    <Link Source="@37" Target="@36" Category="CallStackDirectCall" Bounds="545.551696777344,1003.84252929688,0,22.6875" />
+    <Link Source="@38" Target="@54" Category="CallStackDirectCall" Bounds="545.551696777344,1117.69750976563,0,22.6875" />
+    <Link Source="@39" Target="@63" Category="CallStackDirectCall" Bounds="886.690368652344,1117.69750976563,1.19622802734375,22.699951171875" />
+    <Link Source="@41" Target="@43" Category="CallStackDirectCall" Bounds="1112.55163574219,393.910003662109,0,22.6875" />
+    <Link Source="@42" Target="@41" Category="CallStackIndirectCall" Bounds="1112.55163574219,323.429992675781,0,36.2400207519531" Label="外部代码" LabelBounds="1064.55166666667,338.429999999998,48,15.2399999999998" />
+    <Link Source="@43" Target="(Name=&quot;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;&quot; @4 @16 OverloadingParameters=[(@33 Name=_Ptr)] @2)" Category="CallStackDirectCall" Bounds="950.811279296875,448.174438476563,123.43603515625,32.0863342285156" />
+    <Link Source="@43" Target="@10" Category="CallStackDirectCall" Bounds="1150.875,441.877990722656,259.676635742188,584.652038574219" />
+    <Link Source="@43" Target="@49" Category="CallStackDirectCall" Bounds="1082.05090332031,450.837493896484,30.500732421875,580.393096923828" />
+    <Link Source="@43" Target="@61" Category="CallStackDirectCall" Bounds="1150.875,441.088104248047,461.509399414063,642.534454345703" />
+    <Link Source="@43" Target="@9" Category="CallStackDirectCall" Bounds="1054.62353515625,450.837493896484,39.3065185546875,26.6383972167969" />
+    <Link Source="@44" Target="@45" Category="CallStackDirectCall" Bounds="753.551696777344,507.765014648438,0,22.6875" />
+    <Link Source="@45" Target="@57" Category="CallStackDirectCall" Bounds="752.31103515625,564.692504882813,0.7972412109375,22.6930541992188" />
+    <Link Source="@46" Target="@39" Category="CallStackDirectCall" Bounds="888.551696777344,1060.77001953125,0,22.6875" />
+    <Link Source="@46" Target="@50" Category="CallStackDirectCall" Bounds="926.846862792969,1059.15356445313,381.057800292969,34.40771484375" />
+    <Link Source="@47" Target="@46" Category="CallStackDirectCall" Bounds="931.817260742188,1003.54083251953,79.7616577148438,28.9212036132813" />
+    <Link Source="@48" Target="@56" Category="CallStackIndirectCall" Bounds="648.70263671875,691.724426269531,79.3956298828125,41.4503784179688" Label="外部代码" LabelBounds="684.051666666667,707.099999999997,48.0000000000009,15.2399999999998" />
+    <Link Source="@50" Target="@60" Category="CallStackDirectCall" Bounds="1453.10559082031,1117.69750976563,108.205688476563,29.332763671875" />
+    <Link Source="@51" Target="(Name=cocos2d::Sprite::setSpriteFrame @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::SpriteFrame *&quot; Name=spriteFrame)] @2)" Category="CallStackDirectCall" Bounds="1071.29321289063,1117.69750976563,97.13818359375,29.1043701171875" />
+    <Link Source="@51" Target="(Name=cocos2d::SpriteFrame::getRect @4 Type=&quot;const cocos2d::Rect &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="1232.05517578125,1117.69750976563,46.23095703125,27.132080078125" />
+    <Link Source="@51" Target="(Name=cocos2d::SpriteFrame::getTexture @4 Type=&quot;cocos2d::Texture2D *&quot; @2)" Category="CallStackDirectCall" Bounds="1258.65747070313,1117.69750976563,113.011352539063,29.647216796875" />
+    <Link Source="@51" Target="@59" Category="CallStackDirectCall" Bounds="1187.34265136719,1117.69750976563,15.2283935546875,24.080810546875" />
+    <Link Source="@52" Target="@51" Category="CallStackDirectCall" Bounds="1222.70385742188,1060.77001953125,14.310546875,23.960693359375" />
+    <Link Source="@53" Target="@10" Category="CallStackDirectCall" Bounds="1281.35144042969,1003.84252929688,83.8870849609375,28.7679443359375" />
+    <Link Source="@53" Target="@49" Category="CallStackDirectCall" Bounds="1096.76989746094,1003.84252929688,103.223022460938,29.2349853515625" />
+    <Link Source="@53" Target="@52" Category="CallStackDirectCall" Bounds="1244.55163574219,1003.84252929688,0,22.6875" />
+    <Link Source="@54" Target="(Name=&quot;std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;::operator()&quot; @4 @16 OverloadingParameters=[(Type=&quot;ZRBMenu *&quot; Name=_Pfnobj)] @2)" Category="CallStackDirectCall" Bounds="545.551696777344,1174.625,0,36.239990234375" />
+    <Link Source="@55" Target="(Name=0fe0a5e0 @1 @2)" Category="CallStackIndirectCall" Bounds="710.551696777344,1174.625,0,36.239990234375" Label="外部代码" LabelBounds="662.551666666667,1189.625,48,15.2400000000002" />
+    <Link Source="@56" Target="@20" Category="CallStackDirectCall" Bounds="545.551696777344,762.580017089844,39.5206298828125,79.614990234375" />
+    <Link Source="@56" Target="@21" Category="CallStackDirectCall" Bounds="616.551696777344,762.580017089844,0,22.6875" />
+    <Link Source="@57" Target="@48" Category="CallStackIndirectCall" Bounds="751.551696777344,621.619995117188,0,36.239990234375" Label="外部代码" LabelBounds="703.551666666667,636.619999999997,48,15.2399999999998" />
+    <Link Source="@59" Target="(Name=cocos2d::Sprite::initWithTexture @4 @5 OverloadingParameters=[@58,(Type=&quot;const cocos2d::Rect &amp;&quot; Name=rect),(@5 Name=rotated)] @2)" Category="CallStackDirectCall" Bounds="1174.55163574219,1174.625,0,36.239990234375" />
+    <Link Source="@6" Target="@22" Category="CallStackDirectCall" Bounds="901.551696777344,876.434997558594,0,36.239990234375" />
+    <Link Source="@60" Target="(Name=&quot;cocos2d::Map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,cocos2d::SpriteFrame *&gt;::insert&quot; @4 @16 OverloadingParameters=[(@34 Name=key),(Type=&quot;cocos2d::SpriteFrame *&quot; Name=object)] @2)" Category="CallStackDirectCall" Bounds="1616.55163574219,1174.625,0,36.239990234375" />
+    <Link Source="@61" Target="(Name=&quot;std::set&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,std::less&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt;::insert&quot; @4 Type=&quot;std::pair&lt;std::_Tree_const_iterator&lt;std::_Tree_val&lt;std::_Tree_simple_types&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt; &gt; &gt;,bool&gt;&quot; OverloadingParameters=[(@34 Name=_Val)] @2)" Category="CallStackDirectCall" Bounds="1653.35144042969,1117.69750976563,94.270263671875,32.3287353515625" />
+    <Link Source="@61" Target="@60" Category="CallStackDirectCall" Bounds="1616.55163574219,1117.69750976563,0,22.6875" />
+    <Link Source="@62" Target="@55" Category="CallStackDirectCall" Bounds="717.255310058594,1117.69750976563,7.3060302734375,23.106201171875" />
+    <Link Source="@62" Target="@63" Category="CallStackDirectCall" Bounds="763.356262207031,1117.69750976563,78.9298095703125,28.61962890625" />
+    <Link Source="@63" Target="(Name=cocos2d::Sprite::getTexture @4 Type=&quot;cocos2d::Texture2D *&quot; @2)" Category="CallStackDirectCall" Bounds="885.551696777344,1174.625,0,36.239990234375" />
+    <Link Source="@64" Target="@65" Category="CallStackDirectCall" Bounds="947.551696777344,266.502502441406,0,22.6875" />
+    <Link Source="@65" Target="@67" Category="CallStackDirectCall" Bounds="947.551696777344,323.429992675781,0,36.2400207519531" />
+    <Link Source="@66" Target="@13" Category="CallStackDirectCall" Bounds="1112.55163574219,82.1675033569336,0,22.6875" />
+    <Link Source="@67" Target="@69" Category="CallStackDirectCall" Bounds="941.952270507813,393.910003662109,3.604248046875,22.7979125976563" />
+    <Link Source="@68" Target="(Name=CocosDenshion::MciPlayer::Play @4 @16 OverloadingParameters=[(Type=&quot;unsigned int&quot; Name=uTimes)] @2)" Category="CallStackDirectCall" Bounds="289.697662353516,1003.84252929688,4.41546630859375,22.8509521484375" />
+    <Link Source="@68" Target="@15" Category="CallStackDirectCall" Bounds="320.050323486328,1003.84252929688,51.0737915039063,27.42919921875" />
+    <Link Source="@69" Target="@44" Category="CallStackDirectCall" Bounds="803.165405273438,450.837493896484,94.3744506835938,29.0405578613281" />
+    <Link Source="@7" Target="@32" Category="CallStackDirectCall" Bounds="899.551696777344,621.619995117188,0,36.239990234375" />
+    <Link Source="@8" Target="@28" Category="CallStackDirectCall" Bounds="900.438415527344,762.580017089844,1.0458984375,22.687744140625" />
+    <Link Source="@8" Target="@30" Category="CallStackDirectCall" Bounds="828.0224609375,762.580017089844,48.9172973632813,27.3013305664063" />
+    <Link Source="@9" Target="@29" Category="CallStackDirectCall" Bounds="1022.95227050781,507.765014648438,3.604248046875,22.7979125976563" />
+    <Link Source="ExternalCodeRootNode" Target="(Name=5072a5e0 @1 @2)" Category="CallStackIndirectCall" Bounds="987.551696777344,25.2399997711182,0,22.6875019073486" />
+    <Link Source="ExternalCodeRootNode" Target="(Name=50a1a5e0 @1 @2)" Category="CallStackIndirectCall" Bounds="801.709899902344,20.6847286224365,151.841796875,36.0165500640869" />
+    <Link Source="ExternalCodeRootNode" Target="(Name=77cbcf87 @3 @2)" Category="CallStackIndirectCall" Bounds="902.285339355469,25.2399997711182,58.6640625,27.8299961090088" />
+    <Link Source="ExternalCodeRootNode" Target="@66" Category="CallStackIndirectCall" Bounds="1015.26232910156,25.2399997711182,61.3880615234375,27.9573383331299" />
+  </Links>
+  <Categories>
+    <Category Id="CallStackDirectCall" Label="调用堆栈直接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈直接调用" OutgoingActionLabel="调用堆栈直接调用" />
+    <Category Id="CallStackEntry" Label="调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="调用堆栈入口" />
+    <Category Id="CallStackIndirectCall" Label="调用堆栈间接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈间接调用" OutgoingActionLabel="调用堆栈间接调用" />
+    <Category Id="CodeSchema_CallStackUnresolvedMethod" Label="未解析的方法" CanBeDataDriven="True" DefaultAction="Microsoft.AllOutBoundLinks" IsProviderRoot="False" NavigationActionLabel="未解析的方法" />
+    <Category Id="CodeSchema_SourceLocation" Label="源位置" Icon="File" />
+    <Category Id="ExternalCallStackEntry" Label="外部调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="外部调用堆栈入口" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsExternal" Label="是外部的" Description="一个标志，用于指示此节点是否被认为是外部的" DataType="System.Boolean" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="图标" Description="图标" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="起始行号" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="程序集" ValueType="Uri" />
+    <Name Id="IsUnresolved" Label="是无法解析的" ValueType="System.String" />
+    <Name Id="Name" Label="名称" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="参数" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="类型" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=msvcr120d.dll" />
+    <Alias n="2" Id="IsUnresolved=True" />
+    <Alias n="3" Uri="Assembly=ntdll.dll" />
+    <Alias n="4" Uri="Assembly=ColorJump.exe" />
+    <Alias n="5" Id="Type=bool" />
+    <Alias n="6" Id="(Name=ZRBGameLayer::init @4 @5 @2)" />
+    <Alias n="7" Id="(Name=ZRBHomeLayer::init @4 @5 @2)" />
+    <Alias n="8" Id="(Name=ZRBPageView::init @4 @5 @2)" />
+    <Alias n="9" Id="(Name=ZRBScene::sceneCreate @4 Type=&quot;cocos2d::Scene *&quot; @2)" />
+    <Alias n="10" Id="(Name=cocos2d::SpriteFrameCache::getInstance @4 Type=&quot;cocos2d::SpriteFrameCache *&quot; @2)" />
+    <Alias n="11" Id="(Name=&quot;std::_Tree_const_iterator&lt;std::_Tree_val&lt;std::_Tree_simple_types&lt;std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; &gt; &gt; &gt;::operator*&quot; @4 Type=&quot;const std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; &amp;&quot; @2)" />
+    <Alias n="12" Id="Type=int" />
+    <Alias n="13" Id="(Name=cocos2d::Application::run @4 @12 @2)" />
+    <Alias n="14" Id="(Name=&quot;std::_Tree_iterator&lt;std::_Tree_val&lt;std::_Tree_simple_types&lt;std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; &gt; &gt; &gt;::operator*&quot; @4 Type=&quot;std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; &amp;&quot; @2)" />
+    <Alias n="15" Id="(Name=&quot;std::_Tree_iterator&lt;std::_Tree_val&lt;std::_Tree_simple_types&lt;std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; &gt; &gt; &gt;::operator-&gt;&quot; @4 Type=&quot;std::pair&lt;unsigned int const ,CocosDenshion::MciPlayer *&gt; *&quot; @2)" />
+    <Alias n="16" Id="Type=void" />
+    <Alias n="17" Id="(Name=cocos2d::Director::drawScene @4 @16 @2)" />
+    <Alias n="18" Id="(Name=cocos2d::DisplayLinkDirector::mainLoop @4 @16 @2)" />
+    <Alias n="19" Id="(Name=cocos2d::GLView::pollEvents @4 @16 @2)" />
+    <Alias n="20" Id="(Name=cocos2d::MenuItem::activate @4 @16 @2)" />
+    <Alias n="21" Id="(Name=cocos2d::MenuItemLabel::activate @4 @16 @2)" />
+    <Alias n="22" Id="(Name=ZRBBaseGameLayer::initObject @4 @16 @2)" />
+    <Alias n="23" Id="(Name=ZRBHomeLayer::ZRBHomeLayer @4 @16 @2)" />
+    <Alias n="24" Id="(Name=ZRBMenu::charts @4 @16 @2)" />
+    <Alias n="25" Id="(Name=ZRBMenu::setting @4 @16 @2)" />
+    <Alias n="26" Id="(Name=ZRBMenuChars::call_back @4 @16 @2)" />
+    <Alias n="27" Id="(Name=ZRBMenuSet::call_back @4 @16 @2)" />
+    <Alias n="28" Id="(Name=ZRBGameLayer::create @4 Type=&quot;ZRBGameLayer *&quot; @2)" />
+    <Alias n="29" Id="(Name=ZRBHomeLayer::create @4 Type=&quot;ZRBHomeLayer *&quot; @2)" />
+    <Alias n="30" Id="(Name=ZRBMenu::create @4 Type=&quot;ZRBMenu *&quot; @2)" />
+    <Alias n="31" Id="(Name=ZRBMenuChars::create @4 Type=&quot;ZRBMenuChars *&quot; @2)" />
+    <Alias n="32" Id="(Name=ZRBPageView::create @4 Type=&quot;ZRBPageView *&quot; @2)" />
+    <Alias n="33" Id="Type=&quot;const char *&quot;" />
+    <Alias n="34" Id="Type=&quot;const std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &amp;&quot;" />
+    <Alias n="35" Id="(Name=&quot;std::_Func_class&lt;void,cocos2d::Ref *&gt;::operator()&quot; @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Ref *&quot; Name=&lt;_Args_0&gt;)] @2)" />
+    <Alias n="36" Id="(Name=&quot;std::_Callable_obj&lt;std::_Bind&lt;1,void,std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;,ZRBMenu * const&gt;,0&gt;::_ApplyX&lt;void,cocos2d::Ref *&gt;&quot; @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Ref * &amp;&amp;&quot; Name=&lt;_Args_0&gt;)] @2)" />
+    <Alias n="37" Id="(Name=&quot;std::_Func_impl&lt;std::_Callable_obj&lt;std::_Bind&lt;1,void,std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;,ZRBMenu * const&gt;,0&gt;,std::allocator&lt;std::_Func_class&lt;void,cocos2d::Ref *&gt; &gt;,void,cocos2d::Ref *&gt;::_Do_call&quot; @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Ref * &amp;&amp;&quot; Name=&lt;_Args_0&gt;)] @2)" />
+    <Alias n="38" Id="(Name=&quot;std::_Bind&lt;1,void,std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;,ZRBMenu * const&gt;::operator()&lt;cocos2d::Ref *&gt;&quot; @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Ref * &amp;&amp;&quot; Name=&lt;_Fargs_0&gt;)] @2)" />
+    <Alias n="39" Id="(Name=cocos2d::Node::addChild @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Node *&quot; Name=child)] @2)" />
+    <Alias n="40" Id="Type=float" />
+    <Alias n="41" Id="(Name=cocos2d::Scheduler::scheduleUpdate::__l3::&lt;lambda&gt; @4 @16 OverloadingParameters=[(@40 Name=dt)] @2)" />
+    <Alias n="42" Id="(Name=cocos2d::Scheduler::update @4 @16 OverloadingParameters=[(@40 Name=dt)] @2)" />
+    <Alias n="43" Id="(Name=ZRBThreadLoading::update @4 @16 OverloadingParameters=[(@40 Name=dt)] @2)" />
+    <Alias n="44" Id="(Name=cocos2d::EventDispatcher::dispatchEvent @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Event *&quot; Name=event)] @2)" />
+    <Alias n="45" Id="(Name=cocos2d::EventDispatcher::dispatchTouchEvent @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::EventTouch *&quot; Name=event)] @2)" />
+    <Alias n="46" Id="(Name=ZRBHeroSprite::initThis @4 @16 OverloadingParameters=[(Type=&quot;sHero *&quot; Name=hero)] @2)" />
+    <Alias n="47" Id="(Name=ZRBHeroSprite::create @4 Type=&quot;ZRBHeroSprite *&quot; OverloadingParameters=[(Type=&quot;sHero *&quot; Name=hero)] @2)" />
+    <Alias n="48" Id="(Name=cocos2d::EventDispatcher::dispatchTouchEvent::__l65::&lt;lambda&gt; @4 @5 OverloadingParameters=[(Type=&quot;cocos2d::EventListener *&quot; Name=l)] @2)" />
+    <Alias n="49" Id="(Name=cocos2d::SpriteFrameCache::getSpriteFrameByName @4 Type=&quot;cocos2d::SpriteFrame *&quot; OverloadingParameters=[(@34 Name=name)] @2)" />
+    <Alias n="50" Id="(Name=cocos2d::SpriteFrameCache::addSpriteFramesWithFile @4 @16 OverloadingParameters=[(@34 Name=plist)] @2)" />
+    <Alias n="51" Id="(Name=cocos2d::Sprite::initWithSpriteFrame @4 @5 OverloadingParameters=[(Type=&quot;cocos2d::SpriteFrame *&quot; Name=spriteFrame)] @2)" />
+    <Alias n="52" Id="(Name=cocos2d::Sprite::createWithSpriteFrame @4 Type=&quot;cocos2d::Sprite *&quot; OverloadingParameters=[(Type=&quot;cocos2d::SpriteFrame *&quot; Name=spriteFrame)] @2)" />
+    <Alias n="53" Id="(Name=cocos2d::Sprite::createWithSpriteFrameName @4 Type=&quot;cocos2d::Sprite *&quot; OverloadingParameters=[(@34 Name=spriteFrameName)] @2)" />
+    <Alias n="54" Id="(Name=&quot;std::_Bind&lt;1,void,std::_Pmf_wrap&lt;void (__thiscall ZRBMenu::*)(void),void,ZRBMenu&gt;,ZRBMenu * const&gt;::_Do_call&lt;cocos2d::Ref *,0&gt;&quot; @4 @16 OverloadingParameters=[(Type=&quot;std::tuple&lt;cocos2d::Ref * &amp;&gt;&quot; Name=_Myfargs),(Type=std::_Arg_idx&lt;0&gt; Name=__formal)] @2)" />
+    <Alias n="55" Id="(Name=cpSpaceProcessComponents @4 @16 OverloadingParameters=[(Type=&quot;cpSpace *&quot; Name=space),(Type=double Name=dt)] @2)" />
+    <Alias n="56" Id="(Name=cocos2d::Menu::onTouchEnded @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Touch *&quot; Name=touch),(Type=&quot;cocos2d::Event *&quot; Name=event)] @2)" />
+    <Alias n="57" Id="(Name=cocos2d::EventDispatcher::dispatchEventToListeners @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::EventDispatcher::EventListenerVector *&quot; Name=listeners),(Type=&quot;const std::function&lt;bool __cdecl(cocos2d::EventListener *)&gt; &amp;&quot; Name=onEvent)] @2)" />
+    <Alias n="58" Id="(Type=&quot;cocos2d::Texture2D *&quot; Name=texture)" />
+    <Alias n="59" Id="(Name=cocos2d::Sprite::initWithTexture @4 @5 OverloadingParameters=[@58,(Type=&quot;const cocos2d::Rect &amp;&quot; Name=rect)] @2)" />
+    <Alias n="60" Id="(Name=cocos2d::SpriteFrameCache::addSpriteFramesWithDictionary @4 @16 OverloadingParameters=[(Type=&quot;std::unordered_map&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;,cocos2d::Value,std::hash&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::equal_to&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;,std::allocator&lt;std::pair&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; const ,cocos2d::Value&gt; &gt; &gt; &amp;&quot; Name=dictionary),@58] @2)" />
+    <Alias n="61" Id="(Name=cocos2d::SpriteFrameCache::addSpriteFramesWithFile @4 @16 OverloadingParameters=[(@34 Name=plist),@58] @2)" />
+    <Alias n="62" Id="(Name=cocos2d::Node::addChild @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Node *&quot; Name=child),(@12 Name=zOrder)] @2)" />
+    <Alias n="63" Id="(Name=cocos2d::SpriteBatchNode::addChild @4 @16 OverloadingParameters=[(Type=&quot;cocos2d::Node *&quot; Name=child),(@12 Name=zOrder),(@34 Name=name)] @2)" />
+    <Alias n="64" Id="(Name=cocos2d::GLFWEventHandler::onGLFWMouseCallBack @4 @16 OverloadingParameters=[(Type=&quot;GLFWwindow *&quot; Name=window),(@12 Name=button),(@12 Name=action),(@12 Name=modify)] @2)" />
+    <Alias n="65" Id="(Name=cocos2d::GLView::onGLFWMouseCallBack @4 @16 OverloadingParameters=[(Type=&quot;GLFWwindow *&quot; Name=window),(@12 Name=button),(@12 Name=action),(@12 Name=modify)] @2)" />
+    <Alias n="66" Id="(Name=wWinMain @4 @12 OverloadingParameters=[(Type=&quot;HINSTANCE__ *&quot; Name=hInstance),(Type=&quot;HINSTANCE__ *&quot; Name=hPrevInstance),(Type=&quot;wchar_t *&quot; Name=lpCmdLine),(@12 Name=nCmdShow)] @2)" />
+    <Alias n="67" Id="(Name=cocos2d::GLViewProtocol::handleTouchesEnd @4 @16 OverloadingParameters=[(@12 Name=num),(Type=&quot;int *&quot; Name=ids),(Type=&quot;float *&quot; Name=xs),(Type=&quot;float *&quot; Name=ys)] @2)" />
+    <Alias n="68" Id="(Name=CocosDenshion::SimpleAudioEngine::playEffect @4 Type=&quot;unsigned int&quot; OverloadingParameters=[(@33 Name=pszFilePath),(@5 Name=bLoop),(@40 Name=pitch),(@40 Name=pan),(@40 Name=gain)] @2)" />
+    <Alias n="69" Id="(Name=cocos2d::GLViewProtocol::handleTouchesOfEndOrCancel @4 @16 OverloadingParameters=[(Type=cocos2d::EventTouch::EventCode Name=eventCode),(@12 Name=num),(Type=&quot;int *&quot; Name=ids),(Type=&quot;float *&quot; Name=xs),(Type=&quot;float *&quot; Name=ys)] @2)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="当前调用堆栈节点" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部调用堆栈入口" ValueLabel="True">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结果" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="程序集" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="命名空间" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="接口" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结构" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="枚举" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="委托" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="属性" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="方法" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="事件" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="字段" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out 参数" ValueLabel="具有类别">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="参数" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="局部变量" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="继承自" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="实现" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="调用" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="函数指针" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="字段引用" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_FieldReference')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

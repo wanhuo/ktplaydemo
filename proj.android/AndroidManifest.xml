@@ -5,16 +5,61 @@
       android:versionName="1.0"
       android:installLocation="auto">
 
+    <!-- KTPlay SDK 权限配置开始   -->
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- KTPlay SDK 权限配置结束 -->
+    
+    <!-- 新浪微博权限配置 开始 -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<!-- 新浪微博权限配置 结束 -->
+    
     <uses-sdk android:minSdkVersion="9"/>
     <uses-feature android:glEsVersion="0x00020000" />
 
     <application android:label="@string/app_name"
-                 android:icon="@drawable/icon">
-					 
+                 android:icon="@drawable/ic_launcher">
+                 
         <!-- Tell Cocos2dxActivity the name of our .so -->
         <meta-data android:name="android.app.lib_name"
 	              android:value="cocos2dcpp" />
+				
+        <!-- 新浪微博配置 开始 -->
+        <activity
+            android:name="com.kryptanium.plugin.sns.sinaweibo.KTSinaWeiboActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <meta-data android:name="SINAWEIBO_APPKEY" android:value="\ 1015590476"/>
+        <meta-data android:name="SINAWEIBO_APPSECRET" android:value="55a4980101c57ef45f119f842a0b0905"/>
+        <meta-data android:name="SINAWEIBO_REDIRECTURL" android:value="https://api.weibo.com/oauth2/default.html"/>
+        <!-- 新浪微博配置 结束 -->
+         	 
 
+        <!-- KTPlay SDK配置开始  -->
+        <activity
+            android:name="com.ktplay.activity.GetPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified" >
+        </activity>
+        
+        <meta-data
+            android:name="KTPLAY_CHANNELID"
+            android:value="GP"
+            />
+        <!-- KTPlay SDK配置结束 -->
+        
         <activity android:name="org.cocos2dx.cpp.AppActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait"

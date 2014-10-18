@@ -1,4 +1,6 @@
-#include "AppDelegate.h"
+﻿#include "AppDelegate.h"
+
+#include "Scene/ZRBThreadLoading.h"
 
 USING_NS_CC;
 
@@ -46,9 +48,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 
     // create a scene. it's an autorelease object
-    auto scene = ZRBScene::sceneCreate();
+   // auto scene = ZRBScene::sceneCreate();
 
-	
+	auto scene = ZRBThreadLoading::createScene();
 
 
 
@@ -61,7 +63,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground() {
     Director::getInstance()->stopAnimation();
-
+	NotificationCenter::getInstance( )->postNotification( "EnterBackground" );
     // if you use SimpleAudioEngine, it must be pause
     // SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
 }

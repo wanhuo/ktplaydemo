@@ -31,6 +31,9 @@ enum ZRB_DATE_KEY
 	// 角色拥有
 	KEY_ROLE_ONE ,
 	KEY_ROLE_TWO ,
+	KEY_ROLE_THREE,
+	KEY_ROLE_FOUR,
+	KEY_ROLE_FIVE,
 	// 场景解锁
 	KEY_MATERIAL_SWEET ,
 	KEY_MATERIAL_BLUESKY
@@ -41,21 +44,25 @@ class ZRBUserDate
 private:
 
 	// 文件 Key
-	const char * _Music = "Music";
-	const char * _Sound = "Sound";
-	const char * _RoleOne = "RoleOne";
-	const char * _RoleTwo = "RoleTwo";
-	const char * _GoldNum = "GoldNum";
-	const char * _Score = "Score";
-	const char * _DeathFlight = "DeathFlight";
-	const char * _Magnet = "Magnet";
-	const char * _Resurgence = "Resurgence";
-	const char * _Soar = "Soar";
-	const char * _Model = "CheckModel";
-	const char * _CheckRole = "CheckRole";
-	const char * _CheckMaterial = "CheckMaterial";
-	const char * _MaterialSweet = "MaterialSweet";
-	const char * _MaterialBlueSky = "MaterialBlueSky";
+	const char * _Music				= "Music";
+	const char * _Sound				= "Sound";
+	const char * _RoleOne			= "RoleOne";
+	const char * _RoleTwo			= "RoleTwo";
+	const char * _RoleThree			= "RoleThree";
+	const char * _RoleFour			= "RoleFour";
+	const char * _RoleFive			= "RoleFive";
+
+	const char * _GoldNum			= "GoldNum";
+	const char * _Score				= "Score";
+	const char * _DeathFlight		= "DeathFlight";
+	const char * _Magnet			= "Magnet";
+	const char * _Resurgence		= "Resurgence";
+	const char * _Soar				= "Soar";
+	const char * _Model				= "CheckModel";
+	const char * _CheckRole			= "CheckRole";
+	const char * _CheckMaterial		= "CheckMaterial";
+	const char * _MaterialSweet		= "MaterialSweet";
+	const char * _MaterialBlueSky	= "MaterialBlueSky";
 
 	// 常用值
 	const std::string _true = "true";

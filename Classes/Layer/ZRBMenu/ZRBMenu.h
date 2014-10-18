@@ -38,7 +38,7 @@ private:
 	Label * pGold;
 
 	// Save button 'begin' size
-	Size size;
+	cocos2d::Size size;
 
 	// Save persent view index from pageview
 	int pSsize;

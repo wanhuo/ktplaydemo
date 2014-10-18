@@ -1,4 +1,4 @@
-﻿
+
 
 #ifndef __ZRBHeroSprite_H__
 #define __ZRBHeroSprite_H__
@@ -14,7 +14,7 @@ public:
 
 	static ZRBHeroSprite* create( sHero* hero );
 	// 跳跃
-	void jumpTo( Point p , float time , float timboWidth );
+	void jumpTo( Vec2 p , float time , float timboWidth );
 	// 爬行
 	void climb( );
 	// 创建精灵 动作
@@ -26,10 +26,10 @@ public:
 	float getHeroPositionX( );
 	/// return pHero->getPositionY();
 	float getHeroPositionY( );
-	Size getHeroContentSize( );
+	cocos2d::Size getHeroContentSize( );
 	void setHeroScaleX( float scaleX );
-	void setHeroPosition( Point pos );
-	Rect getHeroBoundingBox( );
+	void setHeroPosition( Vec2 pos );
+	cocos2d::Rect getHeroBoundingBox( );
 private:
 	// 设置方向
 	void heroFaceRight( );
@@ -39,6 +39,7 @@ private:
 	// 动作
 	Action *pClimbAction;
 	Action *pJumpAction;
+	Action * pDieAction;
 };
 
 

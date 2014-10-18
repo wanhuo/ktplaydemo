@@ -8,7 +8,8 @@
 ZRBHeroSprite* ZRBHeroSprite::create( sHero* hero )
 {
 	ZRBHeroSprite *batchNode = new ZRBHeroSprite;
-	batchNode->initWithFile( hero->png , DEFAULT_CAPACITY );
+    batchNode->initWithTexture(Director::getInstance()->getTextureCache()->getTextureForKey( hero->png ), DEFAULT_CAPACITY);
+//	batchNode->initWithFile( hero->png , DEFAULT_CAPACITY );
 	batchNode->autorelease( );
 	batchNode->initThis( hero );
 	return batchNode;
@@ -28,14 +29,14 @@ void ZRBHeroSprite::initThis( sHero* hero )
 	{
 		// 动作帧序列
 		Vector<SpriteFrame *> frames;
-		for ( int i = 1; i <= pHeroMaterial->climbAnimationImageNum; i++ )
+		for ( int i = 0; i < pHeroMaterial->climbAnimationImageNum; i++ )
 		{
 			SpriteFrame *frame = SpriteFrameCache::getInstance( )->getSpriteFrameByName( String::createWithFormat( "hero_climb_%d%s.png" , i , pHeroMaterial->NameAfter.c_str( ) )->getCString( ) );
 			frames.pushBack( frame );
 		}
 		//创建动作
 		Animation *animation = Animation::createWithSpriteFrames( frames );
-		animation->setDelayPerUnit( 0.3 );
+		animation->setDelayPerUnit( 0.08 );
 		Animate* climbAnimate = Animate::create( animation );
 		// 重复播放
 		pClimbAction = RepeatForever::create( climbAnimate );
@@ -48,16 +49,16 @@ void ZRBHeroSprite::initThis( sHero* hero )
 
 
 	//jumpTo
-	if ( pHeroMaterial->jumpAnimationImageNum >= 1 )
+	if ( pHeroMaterial->jumpAnimationImageNum > 0 )
 	{
 		Vector<SpriteFrame *> frames;
-		for ( int i = 1; i <= pHeroMaterial->jumpAnimationImageNum; i++ )
+		for ( int i = 0; i < pHeroMaterial->jumpAnimationImageNum; i++ )
 		{
 			SpriteFrame *frame = SpriteFrameCache::getInstance( )->getSpriteFrameByName( String::createWithFormat( "hero_jump_%d%s.png" , i , pHeroMaterial->NameAfter.c_str( ) )->getCString( ) );
 			frames.pushBack( frame );
 		}
 		Animation *animation = Animation::createWithSpriteFrames( frames );
-		animation->setDelayPerUnit( 0.3 );
+		animation->setDelayPerUnit( 0.1 );
 		Animate* jumpAnimate = Animate::create( animation );
 		pJumpAction = RepeatForever::create( jumpAnimate );
 		pJumpAction->retain( );
@@ -65,6 +66,26 @@ void ZRBHeroSprite::initThis( sHero* hero )
 	else
 	{
 		pJumpAction = NULL;
+	}
+
+	// die
+	if ( pHeroMaterial->jumpAnimationImageNum > 0 )
+	{
+		Vector<SpriteFrame *> frames;
+		for ( int i = 0; i < pHeroMaterial->jumpAnimationImageNum; i++ )
+		{
+			SpriteFrame *frame = SpriteFrameCache::getInstance( )->getSpriteFrameByName( String::createWithFormat( "hero_jump_%d%s.png" , i , pHeroMaterial->NameAfter.c_str( ) )->getCString( ) );
+			frames.pushBack( frame );
+		}
+		Animation *animation = Animation::createWithSpriteFrames( frames );
+		animation->setDelayPerUnit( 0.4 / pHeroMaterial->dieAnimationImageNum );
+		Animate* jumpAnimate = Animate::create( animation );
+		pDieAction = RepeatForever::create( jumpAnimate );
+		pDieAction->retain( );
+	}
+	else
+	{
+		pDieAction = NULL;
 	}
 
 	this->addChild( pHero );
@@ -129,10 +150,20 @@ void ZRBHeroSprite::jumpTo( Point p , float time , float timboWidth )
 			pHero->stopAction( pClimbAction );
 		}
 	}
-	// 执行跳跃
-	if ( pJumpAction != NULL )
+	if ( timboWidth == 0 )
 	{
-		pHero->runAction( pJumpAction );
+		if ( pDieAction != nullptr )
+		{
+			pHero->runAction( pDieAction );
+		}
+	}
+	else
+	{
+		// 执行跳跃
+		if ( pJumpAction != NULL )
+		{
+			pHero->runAction( pJumpAction );
+		}
 	}
 	// 移动位置
 	MoveTo *move = MoveTo::create( time , p );

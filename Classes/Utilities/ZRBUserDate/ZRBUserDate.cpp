@@ -74,6 +74,48 @@ void ZRBUserDate::saveData( ZRB_DATE_KEY key , void *value )
 		}
 			break;
 
+		case KEY_ROLE_THREE:
+		{
+			bool * p = ( bool * ) value;
+			if ( *p )
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleThree , saveData( ( unsigned char* ) _true.c_str( ) , _trueLen ) );
+			}
+			else
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleThree , saveData( ( unsigned char* ) _false.c_str( ) , _falseLen ) );
+			}
+		}
+			break;
+
+		case KEY_ROLE_FOUR:
+		{
+			bool * p = ( bool * ) value;
+			if ( *p )
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleFour , saveData( ( unsigned char* ) _true.c_str( ) , _trueLen ) );
+			}
+			else
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleFour , saveData( ( unsigned char* ) _false.c_str( ) , _falseLen ) );
+			}
+		}
+			break;
+
+		case KEY_ROLE_FIVE:
+		{
+			bool * p = ( bool * ) value;
+			if ( *p )
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleFive , saveData( ( unsigned char* ) _true.c_str( ) , _trueLen ) );
+			}
+			else
+			{
+				UserDefault::getInstance( )->setStringForKey( _RoleFive , saveData( ( unsigned char* ) _false.c_str( ) , _falseLen ) );
+			}
+		}
+			break;
+
 		case KEY_MATERIAL_SWEET:
 		{
 			bool * p = ( bool * ) value;
@@ -201,11 +243,11 @@ bool ZRBUserDate::getDateBool( ZRB_DATE_KEY key )
 			break;
 
 		case KEY_CHECK_MUSIC:
-			b = UserDefault::getInstance( )->getBoolForKey( _Music );
+			b = UserDefault::getInstance( )->getBoolForKey( _Music , true);
 			break;
 
 		case KEY_CHECK_SOUND:
-			b = UserDefault::getInstance( )->getBoolForKey( _Sound );
+			b = UserDefault::getInstance( )->getBoolForKey( _Sound , true);
 			break;
 
 			// 解密后使用
@@ -225,6 +267,43 @@ bool ZRBUserDate::getDateBool( ZRB_DATE_KEY key )
 		case KEY_ROLE_TWO:
 		{
 			if ( _true == parseData( UserDefault::getInstance( )->getStringForKey( _RoleTwo ) ) )
+			{
+				b = true;
+			}
+			else
+			{
+				b = false;
+			}
+		}
+			break;
+
+		case KEY_ROLE_THREE:
+		{
+			if ( _true == parseData( UserDefault::getInstance( )->getStringForKey( _RoleThree ) ) )
+			{
+				b = true;
+			}
+			else
+			{
+				b = false;
+			}
+		}
+			break;
+		case KEY_ROLE_FOUR:
+		{
+			if ( _true == parseData( UserDefault::getInstance( )->getStringForKey( _RoleFour ) ) )
+			{
+				b = true;
+			}
+			else
+			{
+				b = false;
+			}
+		}
+			break;
+		case KEY_ROLE_FIVE:
+		{
+			if ( _true == parseData( UserDefault::getInstance( )->getStringForKey( _RoleFive ) ) )
 			{
 				b = true;
 			}
@@ -280,7 +359,8 @@ int ZRBUserDate::getDateInt( ZRB_DATE_KEY key )
 	{
 		case KEY_DATA_GOLDNUM:
 		{
-			str = parseData( UserDefault::getInstance( )->getStringForKey( _GoldNum ) );
+			// 初始金币 1000 “MTAwMA==” 解密后为 1000
+			str = parseData( UserDefault::getInstance( )->getStringForKey( _GoldNum , "MTAwMA==") );
 			stream << str;
 			stream >> date;
 		}

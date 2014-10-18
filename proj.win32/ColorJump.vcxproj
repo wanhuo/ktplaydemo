@@ -159,6 +159,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\Layer\ZRBViewLayer\ZRBTableViewCell.cpp" />
     <ClCompile Include="..\Classes\Layer\ZRBViewLayer\ZRB_PageView.cpp" />
     <ClCompile Include="..\Classes\Scene\ZRBScene.cpp" />
+    <ClCompile Include="..\Classes\Scene\ZRBThreadLoading.cpp" />
     <ClCompile Include="..\Classes\Utilities\ZRBLanguage\ZRBLanguage.cpp" />
     <ClCompile Include="..\Classes\Utilities\ZRBTheme\ZRBTheme.cpp" />
     <ClCompile Include="..\Classes\Utilities\ZRBUserDate\ZRBUserDate.cpp" />
@@ -185,6 +186,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\Layer\ZRBViewLayer\ZRBTableViewCell.h" />
     <ClInclude Include="..\Classes\Layer\ZRBViewLayer\ZRB_PageView.h" />
     <ClInclude Include="..\Classes\Scene\ZRBScene.h" />
+    <ClInclude Include="..\Classes\Scene\ZRBThreadLoading.h" />
     <ClInclude Include="..\Classes\Utilities\ZRBConfig.h" />
     <ClInclude Include="..\Classes\Utilities\ZRBLanguage\ZRBLanguage.h" />
     <ClInclude Include="..\Classes\Utilities\ZRBTheme\ZRBTheme.h" />
@@ -220,9 +222,12 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Resources\hero\dragon_hero.plist" />
-    <None Include="..\Resources\hero\pink_heor.plist" />
-    <None Include="..\Resources\hero\snail_heor.plist" />
+    <None Include="..\Resources\hero\grotle_hero.plist" />
+    <None Include="..\Resources\hero\hoot_hero.plist" />
+    <None Include="..\Resources\hero\magcargo_hero.plist" />
+    <None Include="..\Resources\hero\spinarak_hero.plist" />
+    <None Include="..\Resources\hero\spoink_hero.plist" />
+    <None Include="..\Resources\hero\tropius_hero.plist" />
     <None Include="..\Resources\Language\en.plist" />
     <None Include="..\Resources\Language\zh.plist" />
     <None Include="..\Resources\material\blueSky_material.plist" />
@@ -230,20 +235,25 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <None Include="..\Resources\material\sweet_material.plist" />
     <None Include="..\Resources\menu\gameFinish_Layer.plist" />
     <None Include="..\Resources\menu\game_menuItem.plist" />
+    <None Include="..\Resources\menu\Gold_pic.plist" />
     <None Include="..\Resources\menu\homeMenu.plist" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Resources\CloseNormal.png" />
     <Image Include="..\Resources\CloseSelected.png" />
     <Image Include="..\Resources\HelloWorld.png" />
-    <Image Include="..\Resources\hero\dragon_hero.png" />
-    <Image Include="..\Resources\hero\pink_heor.png" />
-    <Image Include="..\Resources\hero\snail_heor.png" />
+    <Image Include="..\Resources\hero\grotle_hero.png" />
+    <Image Include="..\Resources\hero\hoot_hero.png" />
+    <Image Include="..\Resources\hero\magcargo_hero.png" />
+    <Image Include="..\Resources\hero\spinarak_hero.png" />
+    <Image Include="..\Resources\hero\spoink_hero.png" />
+    <Image Include="..\Resources\hero\tropius_hero.png" />
     <Image Include="..\Resources\material\blueSky_material.png" />
     <Image Include="..\Resources\material\summer_material.png" />
     <Image Include="..\Resources\material\sweet_material.png" />
     <Image Include="..\Resources\menu\gameFinish_Layer.png" />
     <Image Include="..\Resources\menu\game_menuItem.png" />
+    <Image Include="..\Resources\menu\Gold_pic.png" />
     <Image Include="..\Resources\menu\homeMenu.png" />
     <Image Include="..\Resources\point.png" />
     <Image Include="..\Resources\star.png" />
